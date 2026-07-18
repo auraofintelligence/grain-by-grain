@@ -184,8 +184,9 @@ p { margin-top: 0; }
 .chip.speculative { color: var(--speculative); }
 .chip.fictional { color: var(--fictional); }
 .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .8rem; }
-.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .7rem 1.2rem; padding: 0; margin: 1.4rem 0 0; list-style: none; }
-.legend li { display: flex; align-items: center; gap: .55rem; color: var(--muted); font-size: .92rem; }
+.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr)); gap: 1rem 1.6rem; padding: 0; margin: 1.4rem 0 0; list-style: none; }
+.legend li { display: flex; align-items: flex-start; gap: .55rem; color: var(--muted); font-size: .92rem; }
+.legend li .chip { flex-shrink: 0; margin-top: .1rem; }
 
 /* ---------- Lane cards ---------- */
 .lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: .9rem; }
