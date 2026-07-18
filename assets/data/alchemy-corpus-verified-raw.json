@@ -1,0 +1,1926 @@
+{
+  "summary": "Mine and adversarially verify the complete sand-to-everything material transformation tree from the source corpus",
+  "agentCount": 13,
+  "logs": [
+    "[verify:education] Note: claude-opus-4-8 (the safety classifier) was unavailable when reviewing this subagent's work. Please carefully verify the subagent's actions and output before acting on them.",
+    "[verify:sswf] failed: You've hit your session limit · resets 1:20am (Australia/Brisbane)",
+    "[verify:compendium] Note: claude-opus-4-8 (the safety classifier) was unavailable when reviewing this subagent's work. Please carefully verify the subagent's actions and output before acting on them.",
+    "[verify:amity] Note: claude-opus-4-8 (the safety classifier) was unavailable when reviewing this subagent's work. Please carefully verify the subagent's actions and output before acting on them.",
+    "Verified 109 transformations across 6 documents",
+    "[synthesise-tree] failed: You've hit your session limit · resets 1:20am (Australia/Brisbane)"
+  ],
+  "result": {
+    "verifiedCount": 109,
+    "transformations": [
+      {
+        "input": "Water-saturated dune sand aquifer",
+        "process": "Bentonite slurry-shield TBM (\"Sandworm\"), cutter head in a pressurised chamber whose slurry pressure matches the hydrostatic head",
+        "outputs": [
+          "Excavated tunnel volume",
+          "Slurry-borne excavated sand delivered to the refinery"
+        ],
+        "byproducts": [
+          "Bentonite slurry"
+        ],
+        "byproductFate": "Slurry is recirculated as the transport medium; the entrained sand is pumped onward to mineral separation, so the excavated grains become refinery feedstock rather than spoil.",
+        "precedent": "Slurry-shield TBMs are standard practice for subaqueous/soft-ground tunnelling.",
+        "register": "KNOWN",
+        "caveat": "The core tech is established; adapting it to unconsolidated, fully saturated dune sand at depth is the unproven part.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Excavated sand stream (bulk quartz matrix + concentrated heavy-mineral 'black sand' lenses)",
+        "process": "Lateral Wall Mining hydraulic jets + vacuum augers feeding gravity/magnetic/electrostatic mineral-sands separation in the subterranean refinery",
+        "outputs": [
+          "Sorted high-purity Quartz (SiO2)",
+          "Rutile (TiO2)",
+          "Zircon (ZrSiO4)",
+          "Ilmenite (FeTiO3)",
+          "Monazite (REE/Th phosphate)",
+          "New lined habitable cavern volume"
+        ],
+        "byproducts": [
+          "Bulk quartz matrix (the ~90% majority fraction)"
+        ],
+        "byproductFate": "The bulk quartz is not tailed out: it becomes sintered/geopolymer tunnel lining and the silicon feedstock chain, while the freshly cut cavern is immediately lined and used. Excavation is defined so the entire mass routes to either infrastructure or materials.",
+        "precedent": "Mineral-sands separation of exactly these minerals was the real historical Stradbroke/Minjerribah mining industry (ceased 2019).",
+        "register": "KNOWN",
+        "caveat": "The separation chemistry is proven; doing it simultaneously with tunnelling and in-situ lining as one continuous machine is the speculative integration.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Excavated silica sand / TBM tailings",
+        "process": "Solar-electric laser or plasma-torch sintering into a continuous fused-quartz liner; also press-sintered into topologically-interlocking 'osteomorphic' blocks",
+        "outputs": [
+          "Continuous fused-quartz ceramic tunnel liner",
+          "Sintered-quartz osteomorphic interlocking blocks"
+        ],
+        "byproducts": [],
+        "byproductFate": "Consumes TBM tailings that would otherwise be waste; mortar-free interlocking blocks also let the lining flex and dissipate seismic energy.",
+        "precedent": "Solar/laser sintering of silica sand has been demonstrated; topological interlocking (osteomorphic) blocks are a real research line.",
+        "register": "SPECULATIVE",
+        "caveat": "Laser-sintering a continuous load-bearing fused-quartz liner in a wet-sand bore is not demonstrated at scale; component-level sintering is known. Quartz melts near 1713 C, so a continuous in-situ fusion front is the hard part.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Silica sand + activated metakaolin clay",
+        "process": "Rapid-setting geopolymer paste extruded and 3D-printed as tunnel/sub-module walls in real time behind the shield",
+        "outputs": [
+          "Printed geopolymer tunnel walls and new sub-module linings"
+        ],
+        "byproducts": [],
+        "byproductFate": "Uses locally excavated sand; the printed lining is what makes each laterally-mined cavern immediately usable rather than backfilled.",
+        "precedent": "Geopolymer (metakaolin-activated) concretes and 3D-printed geopolymer construction are established.",
+        "register": "MODELLED",
+        "caveat": "Metakaolin must be sourced and calcined locally; rapid set inside saturated sand needs process validation.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Rutile (TiO2)",
+        "process": "Kroll process — carbochlorination to TiCl4 then magnesium reduction; alloyed to Ti-6Al-4V",
+        "outputs": [
+          "Titanium sponge/metal",
+          "Ti-6Al-4V alloy (marine interface, robot chassis, pressure hulls)"
+        ],
+        "byproducts": [
+          "Magnesium chloride (MgCl2)",
+          "Spent chlorine/HCl"
+        ],
+        "byproductFate": "MgCl2 is electrolysed back to Mg (returned to the Kroll reducer) and Cl2 (returned to the chlorinators); HCl is recycled into the magnesium and silicone loops. Closed chlor-alkali/magnesium cycle: only energy and seawater are net inputs.",
+        "precedent": "Kroll process is the established industrial titanium route.",
+        "register": "KNOWN",
+        "caveat": "Established chemistry (chlorination is carbochlorination: TiO2 + C + 2Cl2 to TiCl4 + CO2); the sovereign twist is closing the Mg/Cl balance on-island, an energy-intensive integration.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Ilmenite (FeTiO3)",
+        "process": "Reduction/smelting (unnamed in doc) to split iron and titanium",
+        "outputs": [
+          "Ferrous alloys for magnetic induction cores",
+          "Secondary titanium source"
+        ],
+        "byproducts": [
+          "Titania-rich slag (implied)"
+        ],
+        "byproductFate": "Serves as secondary Ti feed into the Kroll stream; iron fraction goes to induction-core alloys.",
+        "precedent": "Ilmenite smelting for Fe + TiO2 slag is a real industry.",
+        "register": "KNOWN",
+        "caveat": "The document names no specific process for the Fe/Ti split, so the route is asserted rather than specified.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Zircon (ZrSiO4)",
+        "process": "Zircon refinement/dissociation + chlorination yielding zirconia and a silicon-tetrachloride stream",
+        "outputs": [
+          "Zirconia (ZrO2) 'ceramic steel' for TBM cutters, pump bearings, thermal-barrier coatings"
+        ],
+        "byproducts": [
+          "Silicon Tetrachloride (SiCl4)"
+        ],
+        "byproductFate": "SiCl4 (normally toxic waste) is the central 'waste-is-food' node: captured and split three ways — reduced to Si powder for silicone, purified to polysilicon for wafers, and hydrolysed to silica aerogel. This closes the loop the document repeatedly flags as vital.",
+        "precedent": "Zircon chlorination genuinely co-produces SiCl4; SiCl4 is a standard feedstock for silicones and polysilicon.",
+        "register": "KNOWN",
+        "caveat": "SiCl4 is real chemistry; industrially it more often comes from ferrosilicon/quartz chlorination than from zircon, but the zircon route is legitimate.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Monazite ((Ce,La,Nd,Th)PO4)",
+        "process": "Bio-leaching with Aspergillus fungi and Acidithiobacillus bacteria secreting organic acids (citric, gluconic) that chelate REEs at ambient temperature; AlphaFold-designed enzymes tuned for Nd specificity",
+        "outputs": [
+          "Rare-earth elements (esp. Neodymium, Praseodymium) for NdFeB permanent magnets"
+        ],
+        "byproducts": [
+          "Spent phosphate matrix",
+          "Thorium-bearing residue",
+          "Spent biomass"
+        ],
+        "byproductFate": "Thorium fraction is routed to vitrification (shielding/fuel bank) and to alpha-venting for lightning guidance; phosphate/biomass fate is not stated in the document.",
+        "precedent": "Bio-leaching / bio-mining of REEs (Gluconobacter, Acidithiobacillus) is a genuine research area; AlphaFold protein-structure prediction is real.",
+        "register": "SPECULATIVE",
+        "caveat": "Ambient-temperature bio-leaching of REEs is lab-scale, and monazite is a refractory phosphate: most bioleaching has been shown on secondary sources (phosphogypsum, spent catalysts), not hard-rock monazite. 'AlphaFold-designed enzymes' is a category error — AlphaFold predicts protein structure, it does not design enzymes; de-novo lixiviant enzymes with Nd selectivity would need tools like RFdiffusion/ProteinMPNN and remain aspirational, not demonstrated.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Thorium separated from Monazite",
+        "process": "Vitrification into high-density blocks",
+        "outputs": [
+          "Radiation-shielding blocks",
+          "'Banked' fertile nuclear fuel reserve"
+        ],
+        "byproducts": [],
+        "byproductFate": "Immobilises an otherwise-hazardous radioactive fraction as a dual-use dense solid; alpha-emitting decay products are separately tapped for the lightning-guidance scheme.",
+        "precedent": "Vitrification is the established method for immobilising radioactive material.",
+        "register": "MODELLED",
+        "caveat": "Vitrification is real; using thorium as 'shielding' is conceptually odd (Th-232 is a weak alpha emitter but its decay chain yields gamma-emitting daughters, so the block is itself a source), and the future-reactor 'fuel bank' is speculative.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Used beverage cans (UBC) mined from island and mainland landfills",
+        "process": "Secondary remelting, doped with Silicon (from the zircon stream) and scavenged Manganese to convert mixed 3004/5182 scrap into a heat-treatable alloy (Mg2Si precipitation)",
+        "outputs": [
+          "Sovereign AA6xxx-equivalent structural alloy (Mule robot chassis, shelving, appliance frames)"
+        ],
+        "byproducts": [
+          "Dross/skimmings (implied)"
+        ],
+        "byproductFate": "The Si dopant is itself a byproduct of zircon processing, linking the two streams; the recycled route runs at ~5% of primary-smelting energy (2.5 vs 45 kWh/kg).",
+        "precedent": "Aluminium can recycling at ~5% of primary energy is a documented real figure the paper cites.",
+        "register": "KNOWN",
+        "caveat": "Recycling is proven; controlling a clean 6xxx spec from mixed 3004/5182 melt by Si/Mn doping is simplified and needs real composition management (both feed alloys are non-heat-treatable 3xxx/5xxx, so hitting a heat-treatable 6xxx window from mixed scrap is the hard part).",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Seawater + calcined dolomite",
+        "process": "Precipitate Mg(OH)2, react with recycled HCl to MgCl2, then molten-salt electrolysis",
+        "outputs": [
+          "Magnesium metal (feeds the Kroll reducer)",
+          "Chlorine gas (feeds the chlorinators)"
+        ],
+        "byproducts": [
+          "Chlorine gas",
+          "Calcium residues from dolomite"
+        ],
+        "byproductFate": "Cl2 goes to the chlorination steps; Mg goes to Kroll; the HCl consumed is itself recycled from the Kroll process. The loop is closed so only energy and seawater are net inputs.",
+        "precedent": "The Dow seawater process (Mg from seawater via dolomite) and MgCl2 electrolysis are historically real.",
+        "register": "KNOWN",
+        "caveat": "Individual steps are proven; the claim of full closure across Kroll HCl recycling needs a mass-balance to verify no make-up chlorine is required.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Captured/metabolic CO2 + Hydrogen (from waste-plastic pyrolysis or water electrolysis)",
+        "process": "Catalytic CO2 hydrogenation to methanol",
+        "outputs": [
+          "Methanol (CH3OH) feedstock for the silicone chain"
+        ],
+        "byproducts": [
+          "Water"
+        ],
+        "byproductFate": "Methanol feeds methyl-chloride synthesis; ties air-recycling CO2 capture directly into the silicone industry, so exhaled/metabolic carbon becomes a chemical input.",
+        "precedent": "CO2-to-methanol is commercially demonstrated (Carbon Recycling International 'George Olah' plant).",
+        "register": "KNOWN",
+        "caveat": "Proven at plant scale; economics hinge on cheap surplus H2 and energy.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Methanol + recycled HCl (from the Kroll loop)",
+        "process": "Methanol hydrochlorination to methyl chloride",
+        "outputs": [
+          "Methyl Chloride (CH3Cl)"
+        ],
+        "byproducts": [
+          "Water"
+        ],
+        "byproductFate": "CH3Cl is consumed in Muller-Rochow direct synthesis; the HCl input is Kroll-recycled, chaining titanium waste acid into silicone.",
+        "precedent": "Methanol + HCl to methyl chloride is standard industrial chemistry.",
+        "register": "KNOWN",
+        "caveat": "Routine chemistry.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Elemental Silicon powder (reduced from the SiCl4 stream) + Methyl Chloride",
+        "process": "Muller-Rochow (Direct Process) — Cu-catalysed fluidised-bed synthesis of methylchlorosilanes, then hydrolysis to siloxanes and polymerisation",
+        "outputs": [
+          "Silicone oils, rubbers, resins (O-rings/gaskets for TBMs and airlocks, soft-robot pneumatic muscles, medical tubing/catheters/implants, Mule robot tyres)"
+        ],
+        "byproducts": [
+          "HCl (from chlorosilane hydrolysis)"
+        ],
+        "byproductFate": "Hydrolysis HCl is recycled back into methyl-chloride synthesis and the wider chlor-alkali loop, so no net chlorine is dumped.",
+        "precedent": "Muller-Rochow (Rochow/Direct Process) is the actual industrial silicone route.",
+        "register": "KNOWN",
+        "caveat": "Reducing SiCl4 all the way to Si powder before Muller-Rochow is a redundant extra step (the Direct Process normally uses carbothermic metallurgical-grade Si, not Si made from SiCl4), but it is chemically valid.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "SiCl4 (zirconium-refining waste stream)",
+        "process": "Hydrolysis to silica gel, then supercritical drying using the system's CO2",
+        "outputs": [
+          "Silica aerogel insulation (cryo-tanks, food stores, sand-battery silos)"
+        ],
+        "byproducts": [
+          "HCl (from hydrolysis)",
+          "Spent supercritical CO2"
+        ],
+        "byproductFate": "HCl returns to the chlor-alkali/Kroll loop; the CO2 drying fluid is the same recycled metabolic CO2 used elsewhere and is recovered. The insulation then makes the sand battery and cold chain viable.",
+        "precedent": "Silica aerogel via SiCl4/silica-gel hydrolysis and supercritical CO2 drying is a real production route.",
+        "register": "KNOWN",
+        "caveat": "Established; scale and supercritical-drying throughput are the practical constraints.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Purified SiCl4 stream",
+        "process": "Reduction/purification to polysilicon (Siemens-type, implied), wafering, and lithography at mature 90-180nm nodes with available UV sources; glass substrates cast from local silica",
+        "outputs": [
+          "Silicon wafers",
+          "Sovereign chips for industrial control / AI inference / comms (space-hardened, durability-first)",
+          "Glass PCB substrates"
+        ],
+        "byproducts": [
+          "HCl / chlorosilane recycle",
+          "Off-spec silicon"
+        ],
+        "byproductFate": "Chlorosilane/HCl byproducts fold back into the chlor-alkali loop; glass substrates reuse local silica instead of imported organic PCBs.",
+        "precedent": "Polysilicon from SiCl4 (Siemens) and mature 90-180nm CMOS are long-established real technologies.",
+        "register": "SPECULATIVE",
+        "caveat": "Each step is real, but an end-to-end sovereign wafer fab + lithography is extraordinarily capital- and complexity-intensive; the doc sensibly targets robust legacy nodes. (Note the Siemens process runs on trichlorosilane; SiCl4 is normally a byproduct that must be converted to SiHCl3 first.)",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Quartz + carbon",
+        "process": "Acheson process to silicon carbide, then CVD and MOSFET fabrication",
+        "outputs": [
+          "SiC MOSFETs (induction cooktop power switching)",
+          "SiC pistons for the CO2 cooling system"
+        ],
+        "byproducts": [
+          "CO/CO2 from the Acheson furnace"
+        ],
+        "byproductFate": "CO2 off-gas is in principle recoverable into the same CO2 working-fluid / methanol / algae streams the city already runs (not explicitly stated in the doc).",
+        "precedent": "Acheson process for bulk SiC is genuinely industrial; SiC power MOSFETs are commercial.",
+        "register": "SPECULATIVE",
+        "caveat": "Downgraded from MODELLED: Acheson bulk abrasive-grade SiC is genuinely industrial (that part is KNOWN), but sovereign fabrication of device-grade SiC power MOSFETs requires single-crystal SiC boules (PVT/sublimation), epitaxy and a full wafer fab, an entirely separate capability not implied by Acheson SiC. It is at least as speculative as the sovereign silicon wafer fab elsewhere in this document (rated SPECULATIVE), so MODELLED overstated it.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Kaolin clay",
+        "process": "Aluminium extraction from clay (non-Bayer; acid route implied, unnamed)",
+        "outputs": [
+          "Aluminium for aerospace alloys and ALON feedstock"
+        ],
+        "byproducts": [
+          "Silica/leach residues (implied)"
+        ],
+        "byproductFate": "The aluminium feeds both aerospace alloys and the ALON transparent-armour line; residue fate not stated.",
+        "precedent": "Aluminium recovery from clay/kaolin by acid processes is technically real though not commercially dominant.",
+        "register": "MODELLED",
+        "caveat": "The document names no specific clay-to-aluminium process; acid leaching of calcined kaolin yields alumina (Al2O3), which still needs Hall-Heroult electrolysis to reach aluminium metal, a step the transformation glosses over. Feasibility is real at pilot scale but has never been commercially competitive with the Bayer/bauxite route; energy and acid balance unspecified.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Kaolin-derived Aluminium + Nitrogen",
+        "process": "Sintering to aluminium oxynitride (ALON)",
+        "outputs": [
+          "ALON transparent ceramic armour (cooktop surfaces, windows/armour)"
+        ],
+        "byproducts": [],
+        "byproductFate": "Uses the domestic aluminium stream plus nitrogen from the air-separation units, coupling the ASU to the ceramics line.",
+        "precedent": "ALON is a real transparent ceramic (Surmet's ALON).",
+        "register": "MODELLED",
+        "caveat": "ALON is real but is synthesised from high-purity alumina (Al2O3) plus aluminium nitride (AlN), not from aluminium metal plus nitrogen gas as the feedstock implies; it demands very high-purity powders and tightly controlled sintering/HIP and is essentially single-source globally. Sovereign production from kaolin-derived material is an unproven integration.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Lignocellulosic farm waste (corn stalks, hemp hurds, paper waste) from the hydroponic farms",
+        "process": "Fungal inoculation (e.g., Ganoderma) into moulds; mycelium binds the biomass into a rigid composite",
+        "outputs": [
+          "Mycelium insulation (thermal/acoustic residential panels)",
+          "Mycelium packaging (replacing single-use plastic)",
+          "Fire-resistant panels (chars rather than melts)"
+        ],
+        "byproducts": [],
+        "byproductFate": "Directly consumes agricultural waste from the food system, closing food-to-materials; the chars-not-melts property adds tunnel fire safety.",
+        "precedent": "Mycelium composites are commercial (Ecovative / MycoComposite).",
+        "register": "KNOWN",
+        "caveat": "Established at product scale; structural claims beyond insulation/packaging would need testing.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Metabolic CO2 + light + water (algal cultivation)",
+        "process": "Photobioreactor ('liquid tree') cultivation, then biomass fractionation — lipids to biofuel, starches to biopolymers",
+        "outputs": [
+          "Oxygen",
+          "Biofuels (from lipids)",
+          "PLA/PHA biopolymers for 3D-printed housings, clips, containers"
+        ],
+        "byproducts": [
+          "Fractionation residue",
+          "Scrubbed CO2 converted to O2"
+        ],
+        "byproductFate": "CO2 scrubbed from city air is fixed into biomass and returned as O2; every biomass fraction is split to a use (lipid to fuel, starch to plastic), leaving little residue.",
+        "precedent": "Algal PHA/PLA bioplastics and algal biofuels are real at pilot scale.",
+        "register": "MODELLED",
+        "caveat": "Components are real but pilot-economics; underground 'liquid trees' need artificial light, undercutting the CO2/energy balance.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Waste plastic",
+        "process": "Pyrolysis",
+        "outputs": [
+          "Hydrogen (to methanol synthesis / fuel cells)",
+          "Carbon nanotubes (drone-frame reinforcement)"
+        ],
+        "byproducts": [
+          "Carbon char / mixed hydrocarbons"
+        ],
+        "byproductFate": "H2 feeds the methanol/silicone chain and the hydrogen drone fleet; the carbon fraction is upgraded to CNT composite for airframes rather than landfilled.",
+        "precedent": "Catalytic plastic pyrolysis to H2 + carbon nanomaterials is a real emerging route.",
+        "register": "MODELLED",
+        "caveat": "Getting structural-grade CNTs from mixed waste plastic at useful yield/quality is not yet routine at scale; conventional plastic pyrolysis yields oil/char/syngas, and the clean H2 + high-quality CNT co-product is the aspirational part.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Water + electricity",
+        "process": "Electrolysis",
+        "outputs": [
+          "Hydrogen (drone fuel cells, methanol synthesis)",
+          "Oxygen"
+        ],
+        "byproducts": [
+          "Surplus Oxygen"
+        ],
+        "byproductFate": "Surplus O2 supplies Hyperbaric Oxygen Therapy clinics (decompression sickness for marine workers, wound healing); H2 feeds fuel cells emitting only water vapour, and methanol synthesis.",
+        "precedent": "Water electrolysis is fully established.",
+        "register": "KNOWN",
+        "caveat": "Routine; the medical O2 reuse is a sensible byproduct pathway.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Ambient air",
+        "process": "Cryogenic air separation unit (ASU)",
+        "outputs": [
+          "Argon (Ti welding shield gas)",
+          "Liquid Nitrogen",
+          "Oxygen"
+        ],
+        "byproducts": [
+          "Liquid-nitrogen cold / boil-off refrigeration"
+        ],
+        "byproductFate": "Before the nitrogen is used industrially, its liquid cold is spent driving the 'Deep Freeze' district cooling for electricity-free long-term food storage; argon serves the titanium welders.",
+        "precedent": "Cryogenic ASUs and LN2 cold recovery are standard industrial practice.",
+        "register": "KNOWN",
+        "caveat": "Established; simply sequences the cold duty before the gas duty.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Metabolic CO2 (exhaled breath, scrubbed) as R744 working fluid",
+        "process": "Transcritical CO2 (R744) refrigeration cycle at >100 bar using high-pressure titanium components",
+        "outputs": [
+          "Cooling / refrigeration",
+          "High-grade heat"
+        ],
+        "byproducts": [
+          "Hot-side reject heat"
+        ],
+        "byproductFate": "The reject heat is pumped into the domestic hot-water loop and desalination pre-heaters — 'the A/C unit is the water heater' — so cooling and water heating are one process.",
+        "precedent": "Transcritical CO2 (R744) heat pumps and refrigeration are commercially real.",
+        "register": "KNOWN",
+        "caveat": "Proven; the sovereign angle is that on-island titanium fab supplies the high-pressure components.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Excess electrical energy (solar / wave surges) + silica sand",
+        "process": "Resistive heating of aerogel-insulated sand silos to 500-800C ('solid-state digestion'); discharge via air or supercritical CO2 heat exchange to turbines and process heat",
+        "outputs": [
+          "Months-long thermal storage (gigajoules)",
+          "Process heat for Kroll reactors and domestic hot water",
+          "Turbine electricity on discharge"
+        ],
+        "byproducts": [],
+        "byproductFate": "Discharge heat is cascaded into the Kroll reactors and domestic hot-water loop; the enabling aerogel insulation is itself the SiCl4-waste product, linking two loops.",
+        "precedent": "Sand-based thermal batteries are real (Polar Night Energy, Finland).",
+        "register": "KNOWN",
+        "caveat": "Sand heat storage is demonstrated; existing units run cooler and deliver district heat, not power — 500-800C discharge to sCO2 turbines for electricity plus Kroll process heat is a hotter, harder, undemonstrated integration bolted onto a known storage medium.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Ocean swell / whitewater kinetic energy",
+        "process": "Arrays of tile-scale articulated 'flutter' plates feeding a mechanical 'summing rod' that integrates thousands of chaotic low-energy strokes into one high-torque unidirectional drive; storm mode locks plates rigid to charge hydraulic accumulators",
+        "outputs": [
+          "Electricity",
+          "Pressurised hydraulic energy storage (storm charging)"
+        ],
+        "byproducts": [],
+        "byproductFate": "Converts storm-surge shock, normally destructive, into stored hydraulic pressure — the storm charges the battery instead of eroding the shore.",
+        "precedent": "None given; addresses the real wave-energy impedance-mismatch problem but the summing-rod integrator is a novel concept.",
+        "register": "SPECULATIVE",
+        "caveat": "Physics is plausible but the flutter-array + mechanical summing-rod wave harvester is unbuilt and undemonstrated.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Industrial waste heat",
+        "process": "Far-infrared sauna heating ('the Artificial Sun'); direct low-grade heat reuse",
+        "outputs": [
+          "Therapeutic radiant heat for physiological/psychological baseline health"
+        ],
+        "byproducts": [],
+        "byproductFate": "Absorbs low-grade industrial waste heat that would otherwise need rejecting in a closed volume with no 'outside' to dump to.",
+        "precedent": "FIR saunas and waste-heat reuse are ordinary technologies.",
+        "register": "KNOWN",
+        "caveat": "Simple heat reuse; the 'mandatory health' framing is design intent, not engineering.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Atmospheric electrical energy (lightning) + alpha-emitting Thorium decay products from Monazite stockpiles",
+        "process": "Vent alpha emitters up controlled chimneys to ionise an air column ('plasma wire'), guiding strikes into hardened grounding/harvesting capacitors",
+        "outputs": [
+          "Captured electrical charge (claimed)"
+        ],
+        "byproducts": [],
+        "byproductFate": "Repurposes the radioactive thorium fraction of monazite as an ionisation source rather than pure waste.",
+        "precedent": "Laser/ionisation-guided lightning has lab precedent (Santis 2023), but usable energy capture from lightning does not.",
+        "register": "FICTIONAL",
+        "caveat": "The Santis 2023 precedent used a laser, not alpha emitters; the alpha-emitter 'plasma wire' actually echoes the mid-20th-century radioactive ionising lightning rods that were discredited as ineffective and later banned. Net-useful energy harvesting from lightning is not credible engineering (the charge is diffuse, brief and unpredictable), and venting alpha emitters up open chimneys is a serious radiological dispersal/inhalation hazard.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Silica sand (bulk quartz fraction)",
+        "process": "Metallurgical- then electronic-grade silicon refinement for solar arrays (route not named in doc; overlaps the SiCl4/Siemens chain)",
+        "outputs": [
+          "Photovoltaic-grade silicon for solar arrays"
+        ],
+        "byproducts": [
+          "Slag / off-grade silicon (implied)"
+        ],
+        "byproductFate": "Solar arrays power the whole metabolism (sand battery, electrolysis, sintering); silicon off-cuts feed back into the silicon chain.",
+        "precedent": "Metallurgical-to-electronic-grade silicon refining for PV is a mature global industry.",
+        "register": "MODELLED",
+        "caveat": "The document asserts PV silicon 'refined' from quartz but names no process here; the real work is the purification chain, which it locates in the SiCl4 stream elsewhere. Solar-grade silicon has a lower purity requirement than the semiconductor wafers in the chip transformation, so MODELLED here (vs SPECULATIVE for the fab) is the honest distinction.",
+        "sourceDoc": "amity"
+      },
+      {
+        "input": "Quartz sand (SiO2), the bulk fraction of the island's heavy-mineral sands",
+        "process": "Melting/sintering and purification into glass and structural ceramics, plus carbothermic reduction to metallurgical/solar-grade silicon for photovoltaic wafers; also used directly as thermal-battery storage mass",
+        "outputs": [
+          "structural ceramics",
+          "glass",
+          "solar/PV wafers",
+          "thermal-battery storage medium"
+        ],
+        "byproducts": [],
+        "byproductFate": "Quartz is the base of nearly every downstream loop: bulk sand feeds sintered liners, batteries and blocks, so the dominant fraction of every excavated grain has a consumer.",
+        "precedent": "Grounded in the island's real quartz-dominant sand mass (NSI mineral sands).",
+        "register": "KNOWN",
+        "caveat": "Glass, ceramics and sensible-heat storage are routine and genuinely community-scale, but solar-grade PV wafers require carbothermic reduction to metallurgical silicon then deep purification (Siemens/trichlorosilane route) that is centralised and energy-intensive; the document assumes this rather than detailing it, so the PV-wafer fraction is overclaimed within an otherwise KNOWN loop.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Rutile (TiO2) separated from the heavy-mineral sand fraction",
+        "process": "Titanium extraction (chloride/Kroll route implied) into aerospace/marine alloy Ti-6Al-4V; a share of TiO2 retained as photocatalyst",
+        "outputs": [
+          "Ti-6Al-4V marine-grade alloy",
+          "pressure-hull titanium",
+          "TiO2 photocatalysts"
+        ],
+        "byproducts": [],
+        "byproductFate": "",
+        "precedent": "Ti-6Al-4V is a named, standard real-world aerospace/marine alloy.",
+        "register": "MODELLED",
+        "caveat": "Ti-6Al-4V and the chloride/Kroll route are real and industrially KNOWN, but Kroll titanium is only viable at large centralised scale (integrated chlorination, magnesium reduction, argon/vacuum handling, chlorine recycle) and is the classic process that does not scale down; sovereign island/community-scale aerospace-titanium production is uneconomic and undemonstrated, so downgraded from KNOWN to MODELLED.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Ilmenite (FeTiO3) from the sand fraction",
+        "process": "Co-extraction of titanium and iron; atomised into 3D-printing metal powder and formed into magnetic cores",
+        "outputs": [
+          "titanium 3D-printing powder",
+          "iron for structural-steel alternatives",
+          "magnetic cores"
+        ],
+        "byproducts": [
+          "iron / iron oxide (the gangue stream in a titanium-only flowsheet)"
+        ],
+        "byproductFate": "The iron content, normally waste when only titanium is wanted, is retained as structural-steel substitute and magnetic-core feedstock, so both elements of FeTiO3 are used.",
+        "precedent": "Ilmenite is the dominant real-world titanium feedstock (Geoscience Australia mineral sands, works cited 27).",
+        "register": "MODELLED",
+        "caveat": "Ilmenite is the real dominant titanium feedstock, but the named titanium 3D-printing powder still depends on the energy- and reagent-intensive Kroll-plus-gas-atomisation chain that does not scale down to community operations; the iron 'structural-steel alternative' is loosely specified and still needs smelting and alloying the document omits. Downgraded from KNOWN to MODELLED for the titanium-metal scale gap.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Zircon (ZrSiO4) from the sand fraction",
+        "process": "Chlorination/dissociation to zirconia ('Ceramic Steel') for cutters, bearings and cladding, splitting off the silicon as SiCl4",
+        "outputs": [
+          "zirconia (ZrO2) ceramic for Sandworm TBM cutters",
+          "pump bearings",
+          "nuclear-grade zirconium cladding"
+        ],
+        "byproducts": [
+          "SiCl4 (silicon tetrachloride)",
+          "silica / silicon"
+        ],
+        "byproductFate": "SiCl4 is fed to silica-aerogel synthesis (sand-battery insulation); the silicon is used to dope recycled aluminium into AA6xxx alloy. The 'Si' half of ZrSiO4 becomes two downstream products rather than tailings.",
+        "precedent": "Zirconia ceramics ('Ceramic Steel') and zirconium cladding are established real materials.",
+        "register": "KNOWN",
+        "caveat": "The document calls SiCl4 free 'zircon waste'; in practice it is the chlorination route's co-product carrying its own HCl and handling burden. Separately, nuclear-grade zirconium cladding requires stringent zirconium/hafnium separation (Hf below ~100 ppm) — one of the hardest metallurgical separations — which the document never mentions, so that sub-claim is overclaimed even though the zirconia-ceramic outputs are genuinely KNOWN.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Monazite ((Ce,La,Nd,Th)PO4) from the sand fraction",
+        "process": "'Enzymatic Refinery': microbial bioleaching/biosorption (loosely termed enzymatic) separating rare earths from thorium",
+        "outputs": [
+          "neodymium for turbine/generator magnets",
+          "cerium/lanthanum rare earths",
+          "thorium-232"
+        ],
+        "byproducts": [
+          "thorium-232",
+          "light rare earths (Ce, La)"
+        ],
+        "byproductFate": "Thorium-232, normally the radioactive waste that makes monazite uneconomic, is redirected as alpha-seed fuel for the Thorium-Z ionization engine (out-of-scope lightning system); Ce/La are named but given no stated fate.",
+        "precedent": "Monazite is a real rare-earth-plus-thorium ore (Geoscience Australia mineral sands, works cited 27).",
+        "register": "MODELLED",
+        "caveat": "Conventional monazite cracking (hot caustic or concentrated acid) is KNOWN, but the specified 'enzymatic refinery' is really microbial bioleaching/biosorption at lab-to-pilot scale, not an established integrated separation; individual-REE and REE-from-Th bio-separation is not demonstrated. Thorium-232 is a NORM/radioactive stream requiring radiological handling the document omits, and its onward use sits in the excluded lightning domain. Kept at MODELLED but only weakly supported.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Historical landfill / 'Anthropogenic Ore Body' (aluminium beverage cans)",
+        "process": "Landfill mining plus secondary aluminium remelting",
+        "outputs": [
+          "recycled aluminium metal"
+        ],
+        "byproducts": [],
+        "byproductFate": "The recycled aluminium becomes the base metal for the AA6xxx alloy loop; a former waste stream (landfill) is the feedstock, which is the core 'nothing wasted' move for a metal the sand cannot supply.",
+        "precedent": "The document's own figure: recycling aluminium uses ~5% of the energy of primary extraction (a real, standard figure).",
+        "register": "KNOWN",
+        "caveat": "Aluminium remelting is routine and community-scale; economic landfill mining to recover it at scale is not yet established practice, so the feedstock logistics (not the metallurgy) carry the risk.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Recycled aluminium + silicon (from zircon waste) + magnesium (from seawater)",
+        "process": "Alloying/doping into the Al-Mg-Si AA6xxx family",
+        "outputs": [
+          "Sovereign AA6xxx structural alloy for robotics and habitation frames"
+        ],
+        "byproducts": [],
+        "byproductFate": "This step is itself the destination for three otherwise-wasted streams (post-consumer aluminium, zircon-derived silicon, seawater magnesium), closing three loops into one alloy.",
+        "precedent": "AA6xxx (Al-Mg-Si) is a real, named structural alloy family; magnesium extraction from seawater is a real industry.",
+        "register": "MODELLED",
+        "caveat": "Every input route is real (post-consumer aluminium, zircon-derived silicon, Dow-type seawater-magnesium electrolysis), but seawater magnesium is energy-intensive and consistent 6xxx alloy chemistry from mixed scrap plus co-located sovereign Si/Mg supply needs a mass balance the document asserts rather than shows.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Excavated silica sand at the tunnel face (the excavation stream itself)",
+        "process": "In-situ laser/plasma/solar-electric melting/vitrification, heating sand above its ~1713 degrees C melting point to fuse a continuous vitreous quartz tunnel liner (full melt, not sub-melting sintering)",
+        "outputs": [
+          "printed vitreous quartz tunnel liner (replaces pre-cast concrete segments)"
+        ],
+        "byproducts": [],
+        "byproductFate": "Uses the spoil in place, so the material normally hauled out as waste becomes the structure and removes a surface concrete supply chain.",
+        "precedent": "Document points to 3D-printed infrastructure feasibility (works cited 29) as the analogue.",
+        "register": "SPECULATIVE",
+        "caveat": "Producing a vitreous (glassy) liner requires full melting/vitrification, not 'sintering' as loosely stated. Solar/laser vitrification of sand is demonstrated only at small scale; a continuous, crack-free structural glass liner formed behind a moving TBM, plus the continuous energy to keep silica molten above 1700 C, are unproven.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Sand matrix surrounding the bore, excavated 5 m radially by hydraulic jets ('Surgical Extraction Module')",
+        "process": "Radial hydraulic-jet over-excavation, slurry pumping to surface, heavy-mineral separation, then geopolymer lining of the resulting void",
+        "outputs": [
+          "rutile + zircon heavy-mineral concentrate",
+          "geopolymer-lined habitable cavern volume"
+        ],
+        "byproducts": [
+          "bulk silica sand tailings (after heavy-mineral removal)",
+          "the excavated void"
+        ],
+        "byproductFate": "Silica tailings feed the laser-sintered liner, the sand battery, glass/ceramics and osteomorphic blocks; the void, normally spoil space, is geopolymer-lined into habitable city volume. Tunnelling is reframed as a mineral-production profit centre.",
+        "precedent": "North Stradbroke Island is a real heavy-mineral-sands deposit historically mined for rutile/zircon (PorterGeo, works cited 5; Geoscience Australia, works cited 27).",
+        "register": "SPECULATIVE",
+        "caveat": "Heavy-mineral extraction from the sand is KNOWN, but over-excavating a 5 m annulus in water-saturated, liquefaction-prone sand and holding the void open long enough to line it is geotechnically unproven.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Zircon-processing waste stream: SiCl4",
+        "process": "Sol-gel synthesis plus supercritical drying into silica aerogel",
+        "outputs": [
+          "silica aerogel insulation (~0.013 W/mK)"
+        ],
+        "byproducts": [],
+        "byproductFate": "The aerogel wraps the metamaterial sand-battery silos so a single storm's stored heat lasts months; it is where zircon's silicon by-product lands.",
+        "precedent": "Silica aerogel with ~0.013 W/mK is a real, named ultralight insulator.",
+        "register": "MODELLED",
+        "caveat": "Aerogel from a silicon-alkoxide/chloride sol-gel is real, commercially produced chemistry, but supercritical drying is costly and energy-intensive, SiCl4 hydrolysis liberates large amounts of HCl needing handling, and the SiCl4-to-aerogel yield from zircon chlorination is assumed rather than shown.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Silica sand (excavation stream) plus a 3D-printed conductive ceramic lattice",
+        "process": "Resistive/Joule heating of a sand thermal mass to 600-800 degrees C for seasonal heat storage",
+        "outputs": [
+          "high-temperature seasonal thermal energy store"
+        ],
+        "byproducts": [],
+        "byproductFate": "Consumes bulk excavated silica sand as storage mass and is insulated by the zircon-waste aerogel, tying the excavation and zircon loops into the energy system.",
+        "precedent": "Listed as a quartz application ('thermal batteries') in the Silica Stack table.",
+        "register": "KNOWN",
+        "caveat": "Sand as a sensible-heat store is real and simple (existing sand-battery pilots), but the charging source here is lightning harvesting, which sits in the excluded, speculative energy domain; the 'metamaterial' framing and internal conductive lattice are more novel than the proven storage principle.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Silica sand",
+        "process": "Sintering into topologically-interlocking (mortar-less) blocks with internal periodic voids",
+        "outputs": [
+          "osteomorphic structural blocks for large communal caverns"
+        ],
+        "byproducts": [],
+        "byproductFate": "Another sink for excavated silica sand, used where caverns are too large to line continuously.",
+        "precedent": "Topological interlocking and phononic-crystal void structures are real materials-research concepts.",
+        "register": "MODELLED",
+        "caveat": "Topologically-interlocking (osteomorphic) blocks are a real materials-research concept and plausible, but sintering pure-silica blocks at scale needs high-temperature processing the document glosses, and their acoustic-cloaking ('phononic bandgap') function is the excluded acoustic claim and is not established at building scale.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Seawater (dissolved calcium and carbonate/CO2)",
+        "process": "Peptide-directed biomineralization using AlphaFold-designed peptides to accrete calcium carbonate",
+        "outputs": [
+          "self-healing marine infrastructure (jetties, intakes) that grows its own CaCO3 shell"
+        ],
+        "byproducts": [],
+        "byproductFate": "Draws construction mass directly from seawater, sequestering marine carbonate into infrastructure rather than importing cement; pairs with the seawater-magnesium alloy loop as the second use of seawater.",
+        "precedent": "AlphaFold is a real protein-structure tool (named), but it predicts structure not function; the nearer real precedent for growing marine mineral is seawater mineral-accretion / Biorock electrodeposition.",
+        "register": "SPECULATIVE",
+        "caveat": "Biomineralized/electrodeposited marine cement exists in early forms, but the document's stated mechanism is scientifically confused: AlphaFold predicts protein 3D structure, not mineral-accretion function, so it cannot 'design' accretion peptides. No peptide-directed self-healing CaCO3 infrastructure exists even at pilot scale. Downgraded from MODELLED to SPECULATIVE.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Subterranean industrial waste heat",
+        "process": "Venting as a high-velocity thermal plume (the 'White Horse' updraft)",
+        "outputs": [
+          "buoyant thermal plume that lofts radon-220 to altitude"
+        ],
+        "byproducts": [],
+        "byproductFate": "Otherwise-rejected industrial waste heat becomes the lofting mechanism for the lightning engine, so even the thermal reject stream is assigned a downstream consumer.",
+        "precedent": "",
+        "register": "SPECULATIVE",
+        "caveat": "Included only as a waste-heat valorisation loop; the plume itself is real, but its stated purpose is physically dubious: radon-220 (thoron) has a ~55-second half-life and would largely decay before a buoyant plume could carry it to altitude, and the whole radon-lofting-for-lightning-ionization function sits in the excluded, speculative lightning domain.",
+        "sourceDoc": "masterplan"
+      },
+      {
+        "input": "Heavy mineral sand: Rutile (TiO2) and Ilmenite (FeTiO3) from Minjerribah dunes",
+        "process": "AI alloy design informed by the Materials Project API + GNoME crystal-stability data; simulate 'sovereign alloys' that tolerate the ore's native impurity profile instead of purifying to 99.99%",
+        "outputs": [
+          "Titanium alloys for marine infrastructure and autonomous fleets (the 'Silica Citadel')"
+        ],
+        "byproducts": [
+          "Iron and trace elements native to Ilmenite (normally slag/tailings in conventional purification)"
+        ],
+        "byproductFate": "Retained in-process: the doc has the iron and trace elements engineered in as strengthening agents in the alloy rather than removed, so the usual purification tailings are never generated",
+        "precedent": "The Materials Project (LBNL) and Google DeepMind's GNoME, which computationally identified ~380,000 stable crystal structures (of ~2.2M candidates). GNoME predicts inorganic-crystal stability, not multicomponent alloy performance",
+        "register": "MODELLED",
+        "caveat": "Register held at MODELLED but two overstatements corrected: GNoME predicts crystal-phase stability, it does not 'design alloys' or model impurity tolerance/mechanical performance; and the doc specifies only the AI design layer, not the reduction route (e.g. Kroll). Impurity-tolerant marine/aerospace Ti alloys still need experimental validation",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Zircon sand (ZrSiO4)",
+        "process": "Thermal/chemical dissociation of zircon to zirconia (plasma or lime/caustic dissociation); GNoME/Materials Project phase data inform downstream processing",
+        "outputs": [
+          "Zirconia (ZrO2), the 'ceramic steel' for Sandworm TBM cutter heads and high-temperature thermal barriers"
+        ],
+        "byproducts": [
+          "Silica separated from the zircon lattice (the 'Zircon stream')"
+        ],
+        "byproductFate": "The doc routes silicon (and, incorrectly, magnesium) from the Zircon stream downstream as a doping agent for aluminium alloy reconstitution in Section 2.3",
+        "precedent": "Zirconia-from-zircon dissociation is an established industrial ceramic route; Materials Project / GNoME phase-diagram data",
+        "register": "KNOWN",
+        "caveat": "Core zircon-to-zirconia dissociation is genuinely KNOWN, so register retained. But the process was mis-named ('refining'); it is a dissociation route. The doc's claim that 'Magnesium' comes from the Zircon stream is chemically false: zircon (ZrSiO4) contains no magnesium, only Zr, Si and O (plus trace Hf/U/Th)",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Local Zircon sand, worked in situ at the tunnel face",
+        "process": "'Sandworm' TBM in-situ laser sintering of ambient sand into zirconia/ceramic lining; GNoME-derived phase diagrams cited to predict laser power, temperature and cooling rate",
+        "outputs": [
+          "Fully dense, crack-free ceramic tunnel linings"
+        ],
+        "byproducts": [
+          "Process heat"
+        ],
+        "byproductFate": "Not closed by the doc; heat could in principle feed the thermal stack but no loop is drawn",
+        "precedent": "AI-guided laser sintering of ceramics exists in benchtop additive manufacturing; there is no precedent for a self-sintering mobile tunnel-boring machine",
+        "register": "FICTIONAL",
+        "caveat": "Downgraded SPECULATIVE to FICTIONAL: the 'Sandworm' (a Dune reference) as a mobile TBM that laser-sinters a fully-dense crack-free ceramic lining from ambient sand at the tunnel face is a fictional device, not an engineering roadmap. Bench laser-sintering of pre-formed ceramic powders does not transfer to boring-scale, ambient-feedstock, single-pass dense linings",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Monazite sand (rare-earth phosphate containing Neodymium, Praseodymium and Thorium)",
+        "process": "AI-discovered selective ligands (DOE-linked critical-minerals work) in an 'Enzymatic Refinery'; chelation/'molecular sorting' proposed to replace acid cracking; a control model optimises reactor pH and temperature",
+        "outputs": [
+          "Neodymium (magnets)",
+          "Praseodymium",
+          "Thorium immobilised for safe storage/use"
+        ],
+        "byproducts": [
+          "Radioactive Thorium",
+          "Spent phosphate matrix"
+        ],
+        "byproductFate": "Thorium is not discarded: it is immobilised and stockpiled as fuel for the Thorium MSR/MMR cycle (Section 3.3), closing the loop from mining 'waste' to reactor feedstock",
+        "precedent": "Selective-ligand and biomolecule-based REE separation is an active research area (e.g. Berkeley greener-REE work, calcium/lanthanide-binding peptides); 'CM2US' / DOE critical-minerals programs. These are lab/pilot demonstrations, not industrial monazite refineries",
+        "register": "SPECULATIVE",
+        "caveat": "Downgraded MODELLED to SPECULATIVE: monazite is a notoriously refractory phosphate that industrially requires hot concentrated acid or caustic cracking. Fully replacing that with ambient-condition 'molecular sorting'/chelation is not demonstrated even at pilot scale, and the spent-phosphate and radioactive-decay-chain (Ra, actinium) management is unaddressed. This is aspiration, not a modelled-and-parameterised process",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Monazite sand under high-salinity conditions",
+        "process": "Bio-leaching with enzymes/microbes proposed via AlphaFold, ESM3 (generative protein design) and an 'OPAL' microbial-engineering model; engineer Acidithiobacillus/Aspergillus strains; generate enzymes targeting the phosphate bonds in monazite",
+        "outputs": [
+          "Rare earths liberated from monazite by biological catalysis"
+        ],
+        "byproducts": [
+          "Spent biomass",
+          "Phosphate"
+        ],
+        "byproductFate": "Not specified by the doc",
+        "precedent": "AlphaFold and ESM3 (EvolutionaryScale) are real; Acidithiobacillus/Aspergillus bio-mining and urban REE biomining are documented. 'OPAL' is a named in-house Genesis seed project, not an established third-party model",
+        "register": "SPECULATIVE",
+        "caveat": "Register SPECULATIVE retained and honest. Added correction: bio-leaching precedents are for sulfides/urban ores; no designed enzyme cleaving monazite phosphate bonds has been demonstrated, and Aspergillus/Acidithiobacillus tolerate neither the mineral nor the high-salinity condition well. Presented as a pilot but is unbuilt",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Local Quartz sand (SiO2)",
+        "process": "Carbothermic reduction to metallurgical silicon, then purification toward electronic grade (targeting 9N, ~99.9999999%) via the Siemens/chlorosilane route or proposed laser-assisted/electrochemical alternatives; AI floorplanning (AlphaChip) then optimises chip layout",
+        "outputs": [
+          "Electronic-grade silicon",
+          "Space-hardened 90-180nm sovereign chips",
+          "Silicon base wafers for solar cells"
+        ],
+        "byproducts": [
+          "SiCl4 (silicon tetrachloride) from chlorosilane purification"
+        ],
+        "byproductFate": "SiCl4 is fed to silica-aerogel synthesis for Sand Battery insulation (Section 3.2), converting the fab's principal waste stream into an energy-storage material",
+        "precedent": "Silicon-from-sand carbothermic reduction and Siemens-process 9N purification are established industrially; Google AlphaChip floorplanning is real. Sovereign local sub-100nm fabrication has no precedent at community scale",
+        "register": "MODELLED",
+        "caveat": "Register held at MODELLED only for the metallurgical-silicon and SiCl4-loop chemistry, which is genuinely established. But two embedded claims are SPECULATIVE, not modelled: the laser-assisted/electrochemical purification alternatives are unproven at scale, and a local 90-180nm space-hardened fab is aspirational (a fab is billions of dollars and hundreds of process steps, not a community workshop)",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Local-sand silicon base + a titanate/perovskite layer nominally derived from local Rutile",
+        "process": "Photovoltaic optimisation using Materials Project data on silicon polymorphs and perovskite structures to design a tandem cell",
+        "outputs": [
+          "Tandem (silicon/perovskite) solar cells"
+        ],
+        "byproducts": [],
+        "byproductFate": "None stated",
+        "precedent": "Silicon-perovskite tandem cells are a real emerging PV technology, but record devices use lead-halide (or tin-halide) perovskites; the 'perovskite' there refers to the ABX3 crystal structure, not to titanium mineral perovskite",
+        "register": "SPECULATIVE",
+        "caveat": "Downgraded MODELLED to SPECULATIVE: the rutile-to-'titanium perovskite'-PV link is unsubstantiated and rests on an equivocation. High-efficiency tandem perovskites are lead/tin halides; titanate perovskites (CaTiO3, SrTiO3, the actual TiO2-derived perovskites) are wide-bandgap and are not viable solar absorbers. Deriving a working PV absorber layer from local rutile is not a modelled result",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Anthropogenic ore body (landfill) and mixed aluminium scrap (cans, car parts)",
+        "process": "AI computer-vision robotic sorting extracts specific alloys; the melt is analysed in real time by optical-emission spectroscopy; metallurgical AI calculates the doping (Mg/Si) needed to restore spec",
+        "outputs": [
+          "Aerospace-grade aluminium alloy reconstituted from 'mongrel' scrap"
+        ],
+        "byproducts": [
+          "Non-target sorted fractions from the waste stream"
+        ],
+        "byproductFate": "The doping agents (Mg/Si) are drawn from the Zircon stream (Section 2.2), so a mineral-processing side-stream is claimed to upgrade the recovered scrap",
+        "precedent": "AI-vision waste-sorting and real-time melt spectroscopy (OES) are deployed industrially; 6061 (Mg-Si) alloy chemistry is standard",
+        "register": "MODELLED",
+        "caveat": "AI-vision sorting and melt OES are actually KNOWN/deployed; the MODELLED register applies to the 'closed sovereign loop' framing, not the sorting step. Two corrections: silicon can plausibly come from the Zircon stream (zircon carries Si), but magnesium cannot: zircon contains no Mg, so the Mg-doping-from-zircon claim is false and must be sourced elsewhere. Reaching consistent aerospace 6061/7075 spec from mixed post-consumer scrap is also harder than the doc implies due to accumulated Fe/Cu tramp elements",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Silica sand + surplus renewable electricity/heat; CO2 proposed as heat-exchange fluid",
+        "process": "Store energy as sensible heat at 500-800C in a sand mass; MOOSE (INL) multiphysics simulation optimises heater-element layout, insulation thickness and heat exchange before construction",
+        "outputs": [
+          "Dispatchable stored heat, targeting months-duration thermal storage"
+        ],
+        "byproducts": [],
+        "byproductFate": "CO2 is claimed as a closed-loop working fluid, neither consumed nor vented",
+        "precedent": "Sand-based sensible-heat thermal storage is real at demonstration scale (e.g. Polar Night Energy, Finland); MOOSE is a real open-source multiphysics code (INL). Months-duration retention and CO2 as the exchange fluid at 500-800C are not part of the demonstrated systems",
+        "register": "MODELLED",
+        "caveat": "Downgraded KNOWN to MODELLED: sand sensible-heat storage is real, but this specific configuration is not. Deployed systems (Polar Night Energy) use air as the heat-transfer fluid and target hours-to-weeks, not months; sCO2 is a real power-cycle fluid but adds pressure-vessel complexity not reconciled here. The doc itself concedes the months-retention and CO2 exchange are exactly what still needs the MOOSE calculation, i.e. modelled/unbuilt, not known",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "SiCl4 waste stream from silicon purification",
+        "process": "Sol-gel silica-aerogel synthesis (hydrolysis of the chlorosilane precursor, gelation, supercritical drying); Materials Project API suggests dopants to lower thermal conductivity further",
+        "outputs": [
+          "Silica aerogel insulation for the Sand Battery"
+        ],
+        "byproducts": [
+          "HCl (co-product of chlorosilane hydrolysis; not addressed in the doc)"
+        ],
+        "byproductFate": "The aerogel is consumed as Sand Battery insulation, extending storage duration; the doc does not close the loop on the HCl co-product",
+        "precedent": "Silica aerogel from silicon/chlorosilane and water-glass precursors is established chemistry (sol-gel + supercritical drying); Genesis aerogel/thermal-barrier research",
+        "register": "KNOWN",
+        "caveat": "Register KNOWN retained; process name made specific (sol-gel + supercritical drying, which the doc had left unspecified). Correction stands: hydrolysing SiCl4 liberates ~4 mol HCl per mol SiCl4, and supercritical drying is energy-intensive, so the 'zero-waste' framing is incomplete until the acid stream and drying energy are handled",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Stockpiled Thorium (the byproduct of Monazite REE separation)",
+        "process": "Molten Salt Reactor / Micro-Modular Reactor thorium fuel cycle; 'ReactorFold' generative core design; OpenMC Monte Carlo neutron-transport simulation for independent safety verification",
+        "outputs": [
+          "Nuclear energy from burning stockpiled Thorium",
+          "Community-verifiable reactor safety margins ('Verify, Don't Trust')"
+        ],
+        "byproducts": [
+          "Fission products / spent fuel salt (not detailed)"
+        ],
+        "byproductFate": "Not addressed by the doc",
+        "precedent": "MSRs and thorium (Th-232 to U-233) fuel cycles are real research lines; OpenMC is a real open-source neutron-transport code (originating at MIT, now ANL-supported). 'ReactorFold' is a Genesis-named framework, not validated hardware",
+        "register": "SPECULATIVE",
+        "caveat": "Register SPECULATIVE retained and honest. No commercial thorium MSR operates anywhere; the cycle needs fissile U-233/U-235/Pu startup and on-line salt reprocessing that raises proliferation and materials-corrosion issues. A neutronics code (OpenMC) can verify a design on paper but does not make the reactor buildable at community scale",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Dissolved calcium + CO2 (as carbonate) on a silica substrate",
+        "process": "Peptide-induced calcium-carbonate (biomineral) precipitation, with ESM3-designed sequences proposed to maximise precipitation; peptide-silica interaction simulated in the digital twin for a self-healing mechanism",
+        "outputs": [
+          "'Oyster-crete' self-healing living marine infrastructure"
+        ],
+        "byproducts": [],
+        "byproductFate": "CO2 is sequestered into solid calcium carbonate, so the 'waste' gas becomes the binding material",
+        "precedent": "Microbially/enzyme-induced calcite precipitation (MICP) and self-healing concrete are real research areas; calcium/lanthanide-binding peptides and ESM3 protein design are real",
+        "register": "SPECULATIVE",
+        "caveat": "Register SPECULATIVE retained and honest. MICP self-healing concrete is genuinely demonstrated (usually via ureolytic bacteria such as Sporosarcina pasteurii, not designed peptides). ESM3-designed peptides binding a silica substrate to drive self-healing is conceptual and undemonstrated, and marine CaCO3 durability against sulfate/chloride attack is unproven",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "General waste stream",
+        "process": "Plasma gasification/vitrification in a thermal-plasma torch (correcting 'incineration'); the doc cites fusion plasma-physics codes (Gkeyll, 'STELLAR-AI', PPPL) to 'stabilise the plasma'",
+        "outputs": [
+          "Waste destruction/vitrification and recovered syngas/heat"
+        ],
+        "byproducts": [
+          "Vitrified slag/residue (not detailed)"
+        ],
+        "byproductFate": "Not specified",
+        "precedent": "Plasma gasification/vitrification is an established industrial process (thermal-plasma torches). Gkeyll is a real gyrokinetic/continuum code for MAGNETISED FUSION plasmas (PPPL); it does not model industrial thermal-plasma waste torches",
+        "register": "SPECULATIVE",
+        "caveat": "Register held at SPECULATIVE but a category error corrected: the process is plasma gasification/vitrification, not 'incineration', and the cited codes (Gkeyll and fusion 'plasma-control' tooling) model hot, low-density, magnetically-confined fusion plasmas, the wrong physics regime for a collisional, atmospheric-pressure industrial plasma torch. The precedent conflates fusion simulation with industrial plasma processing. Mentioned only as an aside with no feedstock, throughput or output detail",
+        "sourceDoc": "genesis"
+      },
+      {
+        "input": "Heavy mineral dune sand ('Silica Stack') from the island's Pleistocene dunes",
+        "process": "Gravity (spiral/density) separation to split light quartz from the heavy-mineral concentrate, followed by magnetic and electrostatic separation to split the heavies; document names only density / specific-gravity separation and hand-lens sorting ('The Sand Sorters')",
+        "outputs": [
+          "Quartz (SiO2)",
+          "Rutile (TiO2)",
+          "Zircon (ZrSiO4)",
+          "Ilmenite (FeTiO3)"
+        ],
+        "byproducts": [
+          "Monazite (rare-earth / thorium-bearing radioactive fraction)",
+          "Ilmenite (FeTiO3) surplus"
+        ],
+        "byproductFate": "Monazite is routed only to radiation-safe handling ('Time-Distance-Shielding' via the 'Ranger Report'); no downstream rare-earth extraction is specified, so this loop is left OPEN. Ilmenite is identified but not explicitly routed (rutile, not ilmenite, is fed to Kroll).",
+        "register": "KNOWN",
+        "caveat": "Mineral-sands separation is a mature real industry, but the NAMED method fails on the chemistry: density/specific-gravity separation cleanly splits light quartz (SG ~2.65) from the heavies, yet rutile (~4.2), ilmenite (~4.7) and zircon (~4.6) have overlapping specific gravities and cannot be separated from each other by density or a child's hand-lens; the real four-way split requires magnetic (ilmenite is magnetic; zircon/rutile are not) and electrostatic (conductive rutile/ilmenite vs non-conductive zircon) circuits. The zero-waste claim also leaves the Monazite and ilmenite loops open.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Zircon (ZrSiO4) fraction from sand sorting",
+        "process": "Zirconia ceramics processing (implied by the 'Zirconia Ceramics Specialist' Trajectory); real routes are thermal/plasma dissociation or caustic fusion, none of which the document specifies",
+        "outputs": [
+          "Zirconia (ZrO2) technical ceramics"
+        ],
+        "register": "KNOWN",
+        "caveat": "Zircon-to-zirconia is genuinely established chemistry, but here it is only a labelled career destination: no dissociation/purification steps are given, and the real routes (plasma dissociation at ~1800C or caustic fusion) are non-trivial at community scale.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Lignocellulosic waste (waste paper, corn stalks)",
+        "process": "Fungal binding: inoculation of shaping moulds with Ganoderma mycelium and a monitored growth phase ('Mushroom Brick Makers')",
+        "outputs": [
+          "Rigid fire-resistant insulation blocks (mycelium bio-composite)"
+        ],
+        "byproducts": [],
+        "byproductFate": "The feedstock is itself a discard stream (paper/agri-residue) consumed as fungal substrate, so this process closes an existing waste loop rather than creating one ('waste-as-food').",
+        "register": "KNOWN",
+        "caveat": "Mycelium composites are real and commercial (Ecovative-type); Ganoderma is a real binder species (a basidiomycete, not strictly a 'mould'). Mycelium composites do char and self-extinguish, so 'fire-resistant' is defensible, but the structural and insulation performance figures are optimistic and strongly strain- and process-dependent.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "CO2 from human respiration ('breath') plus sunlight, in algae photobioreactors",
+        "process": "Photosynthesis in translucent 'Liquid Tree' algae photobioreactors: CO2 + light -> O2 + biomass",
+        "outputs": [
+          "Oxygen (breathable air)",
+          "Algal biomass"
+        ],
+        "byproducts": [
+          "Algal biomass"
+        ],
+        "byproductFate": "Algal biomass is harvested and sent to the Sovereign Refinery for bioplastic production; human-breath CO2 is the feedstock, closing a respiration-to-materials loop.",
+        "precedent": "Named 'Liquid Trees' (cf. the real Belgrade LIQUID 3 microalgae photobioreactor, ~600 L, installed 2021) - precedent confirmed real",
+        "register": "MODELLED",
+        "caveat": "Algae O2/biomass generation is real, but the scale gap is severe: a LIQUID 3-type unit offsets roughly two trees, whereas supplying breathable air for a subterranean city (and simultaneously feeding a plastics refinery) is an unquantified integration many orders of magnitude beyond the cited precedent.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Harvested algal biomass from the Liquid Tree reactors",
+        "process": "Refinery bioplastic synthesis",
+        "outputs": [
+          "Bioplastic"
+        ],
+        "register": "MODELLED",
+        "caveat": "Algae-derived bioplastics (PHA/PHB and starch-based) are demonstrated only at pilot scale; the document supplies no yield, polymer chemistry, or throughput. Its own gloss 'Biomass (plastic)' overstates the directness of the step.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Used aluminium beverage cans (UBCs) mined from the local landfill (the 'Anthropogenic Ore Body')",
+        "process": "Crush, clean, sort and remelt recycling ('The Aluminium Scavengers')",
+        "outputs": [
+          "Recycled aluminium metal"
+        ],
+        "byproducts": [],
+        "byproductFate": "Landfill discard is the feedstock; recycling consumes a waste stream ('Thermodynamic Arbitrage').",
+        "precedent": "Aluminium can recycling energy saving quoted as 2.5 kWh/kg (recycled) vs 45 kWh/kg (primary from bauxite), i.e. ~95% saving",
+        "register": "KNOWN",
+        "caveat": "Verified: the ~95% saving is textbook-correct and the absolute figures are in range (remelt ~2.5 kWh/kg; primary total ~45 kWh/kg, of which Hall-Heroult electrolysis alone is ~13-15 kWh/kg). This is the document's most solidly grounded quantitative claim. Only soft point is that landfill mining of UBCs is itself economically marginal, but the recycling chemistry is sound.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Excavated dune sand (quartz spoil) produced by the 'Sandworm' Wet-Sand TBM",
+        "process": "In-situ geopolymer paste extrusion / 3D printing plus laser sintering into 'Osteomorphic Block' linings ('In-Situ Geopolymer Printing')",
+        "outputs": [
+          "Structural geopolymer/ceramic tunnel lining ('Osteomorphic Blocks')"
+        ],
+        "byproducts": [],
+        "byproductFate": "Consumes the TBM's own spoil as construction feedstock: the tunnel builds its walls from exactly the material it removes, so excavation produces no spoil-waste.",
+        "register": "SPECULATIVE",
+        "caveat": "Two distinct routes are conflated and one is chemically wrong for the feedstock: pure quartz spoil (SiO2) is NOT a geopolymer precursor. Geopolymerisation needs a reactive aluminosilicate (metakaolin, fly ash or slag: Al + Si) plus an alkali activator; quartz is essentially inert filler. Laser sintering (thermal, melts silica to glass) is a different mechanism and is only demonstrated at small scale (cf. Solar Sinter). 'Osteomorphic Block' topological interlocking is a real research concept, but in-situ structural printing/sintering from raw sand behind a live TBM is unbuilt. SPECULATIVE upheld and reinforced.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Peripheral sand matrix surrounding the tunnel",
+        "process": "Hydraulic-jet excavation via the 'Surgical Extraction Module' ('Lateral Wall Mining'), reading geological telemetry for mineral lenses",
+        "outputs": [
+          "Additional habitable volume",
+          "Harvested ore ('Black Sand' heavy-mineral lenses)",
+          "Structural quartz"
+        ],
+        "byproducts": [],
+        "byproductFate": "Black-sand ore feeds the mineral-sorting/refinery streams and quartz feeds construction and computing, so city expansion and ore mining are a single act.",
+        "register": "SPECULATIVE",
+        "caveat": "Hydraulic mining (hydraulicking) is individually real, but coordinated hydraulic wall-mining to simultaneously expand habitable volume, maintain structural stability, and selectively harvest ore lenses behind a TBM is not an established method. SPECULATIVE upheld.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Seawater",
+        "process": "Precipitation of magnesium hydroxide (Mg(OH)2) with lime, conversion to MgCl2 with HCl, then molten-salt electrolysis (front half of the 'Magnesium-Titanium Cycle')",
+        "outputs": [
+          "Magnesium metal (the reducing agent for Kroll)"
+        ],
+        "byproducts": [
+          "Chlorine gas (Cl2)"
+        ],
+        "byproductFate": "Chlorine gas is explicitly named as the feedstock for the next process: it chlorinates rutile to TiCl4 in the Kroll loop (and is available to the chloride/silicone chemistry). This is the document's flagship 'waste of one process is feedstock of another' claim.",
+        "precedent": "Dow-type seawater magnesium extraction (real historical industrial process, Freeport TX) - precedent confirmed real",
+        "register": "KNOWN",
+        "caveat": "Chemistry verified and genuinely closed-loop (seawater + lime -> Mg(OH)2; Mg(OH)2 + HCl -> MgCl2; molten MgCl2 electrolysis -> Mg + Cl2). The document's honesty gap is energetic, not chemical: molten-salt magnesium electrolysis is extremely electricity-intensive (~10-18 kWh/kg Mg), which the 'closed loop' framing glosses over.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Rutile (TiO2) from sand sorting, plus chlorine and carbon, reduced with magnesium metal",
+        "process": "Kroll Process: carbochlorination of rutile to TiCl4, then magnesiothermic reduction (TiCl4 + 2Mg -> Ti + 2MgCl2)",
+        "outputs": [
+          "Titanium metal (the citadel's 'Structural Metal')"
+        ],
+        "byproducts": [
+          "Magnesium chloride (MgCl2)"
+        ],
+        "byproductFate": "MgCl2 is electrolysed back to magnesium metal and chlorine gas, both recycled to the front of the cycle, exactly as in real Kroll plants: a genuinely closed Mg/Cl loop.",
+        "precedent": "The Kroll Process (established industrial titanium production) - precedent confirmed real",
+        "register": "KNOWN",
+        "caveat": "Stoichiometry verified correct (TiO2 + 2Cl2 + 2C -> TiCl4 + 2CO; TiCl4 + 2Mg -> Ti + 2MgCl2) and the Mg/Cl loop is closed industrially. Understated costs: extreme thermal inputs, slow batch throughput, and the vacuum distillation needed to purify the titanium sponge, none of which the document addresses.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Elemental silicon (reclaimed from SiCl4 waste) plus methyl chloride (CH3Cl)",
+        "process": "Muller-Rochow / Direct Process in fluidised-bed reactors -> methylchlorosilanes -> silicone rubber",
+        "outputs": [
+          "Silicone rubber / silicones"
+        ],
+        "byproducts": [],
+        "byproductFate": "Consumes reclaimed silicon (see SiCl4 entry); the HCl that the document does not track is actually liberated at the downstream hydrolysis/condensation step, not in the Direct Process itself.",
+        "precedent": "The Muller-Rochow (Direct) Process (real industrial silicone route) - precedent confirmed real",
+        "register": "KNOWN",
+        "caveat": "The Direct Process is real (Si + 2CH3Cl -> (CH3)2SiCl2 over a Cu catalyst). Correction to the byproduct accounting: HCl is released when the chlorosilanes are hydrolysed to siloxanes, not by the Direct Process; the document also omits the chlorosilane distillation train and flags the SiCl4/CH3Cl nexus only as 'high-risk'.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Silicon tetrachloride (SiCl4) waste, corrosive and moisture-reactive (from silicon refining and chip fabrication)",
+        "process": "Reduction / hydrogenation of SiCl4 back to elemental silicon (industrially usually via conversion to trichlorosilane SiHCl3 first)",
+        "outputs": [
+          "Elemental silicon"
+        ],
+        "byproducts": [],
+        "byproductFate": "The reclaimed silicon is fed into the Muller-Rochow reactor as silicone feedstock, turning a hazardous waste stream into an input (the document's 'SiCl4 nexus').",
+        "register": "KNOWN",
+        "caveat": "Recovering silicon value from SiCl4 is real practice (part of the polysilicon/Siemens loop), but the mainstream route hydrogenates SiCl4 to SiHCl3 for re-deposition rather than reducing straight to bulk silicon; direct SiCl4 reduction needs an aggressive reductant (Na/Mg/Zn historically). 'Toxic' is loose: SiCl4 is corrosive and hydrolyses violently to HCl rather than being a classic toxin. Routing chip-fab waste specifically into silicone feed is plausible but unquantified.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Local quartz (SiO2)",
+        "process": "Refining to silicon and glass, then 90nm-180nm lithography fabricating SiC MOSFETs and rugged processors on quartz-derived glass substrates ('Lithography on the Dunes')",
+        "outputs": [
+          "Silicon wafers/chips",
+          "Silicon Carbide (SiC) MOSFETs",
+          "Glass substrates"
+        ],
+        "byproducts": [
+          "SiCl4 waste"
+        ],
+        "byproductFate": "SiCl4 waste is reduced to silicon and diverted to the Muller-Rochow silicone process, linking the foundry to the refinery.",
+        "register": "SPECULATIVE",
+        "caveat": "Several real technologies are welded into a chemically incoherent claim. High-performance and SiC MOSFETs are NOT fabricated on 'quartz-derived glass substrates': logic silicon needs single-crystal Si wafers, and SiC power devices need single-crystal SiC wafers grown by physical vapour transport/sublimation at ~2500C, not lithography on glass (glass substrates are for display TFTs, a much lower-performance class). Add sovereign 90nm lithography and solar-grade purification, and this is far beyond any demonstrated small-community capability. SPECULATIVE upheld and reinforced.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Quartz (SiO2) from sand sorting",
+        "process": "Sintering and glass/ceramic forming ('Glass & Ceramics'); note that a working photovoltaic cell cannot be produced by sintering silica",
+        "outputs": [
+          "Glass",
+          "Sintered ceramic tunnel linings",
+          "Basic photovoltaic cells"
+        ],
+        "register": "MODELLED",
+        "caveat": "DOWNGRADED KNOWN -> MODELLED. Glass and ceramic sintering from silica are genuinely established (that part alone would be KNOWN), but the entry bundles in 'basic photovoltaic cells', which sintering cannot yield: a PV cell is a doped semiconductor p-n junction requiring solar-grade silicon (~99.9999%, made via the energy-intensive Siemens process), not fused silica. Listing PV as a direct sintering output overclaims the whole entry, so the honest register for the transformation as written is MODELLED.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Sand plus surplus (wave/solar) energy",
+        "process": "Sand-battery thermal energy storage at 500-800C with CO2 heat exchange ('Sand Battery Thermodynamics')",
+        "outputs": [
+          "Dispatchable high-grade stored heat"
+        ],
+        "byproducts": [],
+        "byproductFate": "Supplies the high-temperature process heat the refinery chemistry (Kroll, silicon, sintering) and habitat heating require, buffering intermittent renewable input; CO2 acts as the heat-exchange working fluid rather than being emitted.",
+        "precedent": "Sand-battery thermal storage (cf. the real Polar Night Energy installation, Kankaanpaa, Finland) - precedent confirmed real",
+        "register": "KNOWN",
+        "caveat": "The core transformation (surplus electricity -> stored sensible heat in sand) is genuinely demonstrated commercially, so KNOWN holds for the base concept. But the specific 500-800C-with-supercritical-CO2 variant is not the demonstrated system: Polar Night Energy uses air as the heat-transfer medium at roughly 500-600C. Coupling a sand store to a CO2 heat-exchange/power loop and pushing to 800C is research-stage and unquantified here.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Ocean wave kinetic energy",
+        "process": "Articulated-plate 'Flutter' wave energy converter with hydraulic rams",
+        "outputs": [
+          "Electricity"
+        ],
+        "byproducts": [],
+        "byproductFate": "Provides the electrical power that drives the seawater electrolysis and lithography loops; no material byproduct.",
+        "precedent": "Closely matches the real Pelamis attenuator (articulated floating segments with hydraulic power take-off), which reached open-sea testing but never commercial scale; its developer, Pelamis Wave Power, went into administration in 2014",
+        "register": "MODELLED",
+        "caveat": "An energy transformation, not a material one; included because it powers the electrochemical loops. The articulated-plate/hydraulic-ram concept is more grounded than 'invented' (the Pelamis attenuator was a real device of exactly this type), but that very precedent failed commercially, so the specific 'Flutter' device remains unproven at scale. MODELLED retained.",
+        "sourceDoc": "education"
+      },
+      {
+        "input": "Ilmenite (FeTiO₃) heavy-mineral sand concentrate (gravity + magnetic separation)",
+        "process": "Sulfate process (digestion in sulfuric acid)",
+        "outputs": [
+          "Titanium dioxide (TiO₂) pigment"
+        ],
+        "byproducts": [
+          "Iron(II) sulfate / copperas",
+          "iron oxides"
+        ],
+        "byproductFate": "The iron oxides feed the paint line as red and yellow iron-oxide artist's pigments (document lists iron-oxide pigments alongside TiO₂ white and biochar carbon black), so the pigment plant's iron waste becomes the palette rather than tailings.",
+        "precedent": "Established sulfate-route TiO₂ pigment plants worldwide",
+        "register": "KNOWN",
+        "caveat": "Document names the iron-sulfate byproduct but does not itself connect it to the iron-oxide pigment use; that nothing-wasted link is inferred from the later paints section.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Ilmenite / rutile concentrate",
+        "process": "Chloride process (carbochlorination to TiCl₄, then high-temperature oxidation)",
+        "outputs": [
+          "Titanium dioxide (TiO₂) pigment",
+          "titanium tetrachloride (TiCl₄) intermediate"
+        ],
+        "byproducts": [
+          "Iron(III) chloride (FeCl₃)",
+          "chlorine liberated on oxidation",
+          "CO/CO₂"
+        ],
+        "byproductFate": "Chlorine released when TiCl₄ is oxidised back to TiO₂ is recycled to the chlorinator; the same chlorine pool is shared with the Kroll feed and the seawater-electrolysis chlorine stream.",
+        "precedent": "Chloride-route pigment and titanium-sponge producers",
+        "register": "KNOWN",
+        "caveat": "Chlorine recycle is standard practice industrially but the document only implies it; FeCl₃ handling is a genuine metal-chloride waste. The chloride route also requires high-grade (low-iron) feed, so it favours rutile / synthetic rutile over raw ilmenite.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Ilmenite (FeTiO₃)",
+        "process": "Ore upgrading: iron-oxide removal to synthetic rutile, or smelting to titania slag",
+        "outputs": [
+          "Synthetic rutile / titania slag (upgraded Ti feedstock)"
+        ],
+        "byproducts": [
+          "Iron oxides / pig iron"
+        ],
+        "byproductFate": "Removed iron oxide routes to the pigment/steel side; the document itself uses iron oxides as pigments, so the deironing waste is consumed downstream.",
+        "precedent": "Becher process and electric-furnace titania-slag smelting (real synthetic-rutile routes)",
+        "register": "KNOWN",
+        "caveat": "Document says 'removing iron oxides' and names titanium slag without naming the specific route; Becher/slag smelting are the real analogues.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Rutile (TiO₂) or upgraded synthetic rutile + chlorine + carbon (coke/biochar) + magnesium",
+        "process": "Kroll process (carbochlorination TiO₂ + 2Cl₂ + C → TiCl₄ + CO₂; then TiCl₄ + 2Mg → Ti + 2MgCl₂), followed by vacuum distillation and VAR/EBM remelt",
+        "outputs": [
+          "Titanium sponge (>99.5%)",
+          "titanium ingot",
+          "titanium alloy Ti-6Al-4V"
+        ],
+        "byproducts": [
+          "Magnesium chloride (MgCl₂)",
+          "CO₂"
+        ],
+        "byproductFate": "MgCl₂ is electrolysed to regenerate the magnesium reductant and chlorine gas, closing the Mg/Cl loop back into the chlorinator; CO₂ is directed to emissions capture and algae bioreactors.",
+        "precedent": "Kroll process (W.J. Kroll, 1940), the dominant commercial titanium route",
+        "register": "KNOWN",
+        "caveat": "Document states Mg and MgCl₂ are 'removed by vacuum distillation or leaching' but does not describe the real-world electrolytic Mg/Cl₂ recycle; the closed loop is the industrial reality, not a stated claim. The chlorinator commonly evolves CO rather than pure CO₂ at operating temperature, but the balanced CO₂ form given is an acceptable simplification.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Titanium tetrachloride (TiCl₄) from Ti ore + sodium",
+        "process": "Hunter process (batch sodium reduction: TiCl₄ + 4Na → Ti + 4NaCl at 700-800°C)",
+        "outputs": [
+          "High-purity titanium powder/sponge",
+          "titanium ingot after inert-atmosphere melt"
+        ],
+        "byproducts": [
+          "Sodium chloride (NaCl)"
+        ],
+        "byproductFate": "NaCl is washed out with water/dilute acid and returns to the salt/brine pool that feeds the sodium-electrolysis unit, so the reduction salt re-enters sodium production.",
+        "precedent": "Hunter process (M.A. Hunter, 1910)",
+        "register": "KNOWN",
+        "caveat": "Proven chemistry but effectively obsolete: Kroll displaced it commercially because of the cost of sodium. The NaCl-to-electrolysis recovery is a plausible integration it does not spell out.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Titanium tetrachloride (TiCl₄) + molten sodium",
+        "process": "Armstrong process (continuous liquid-sodium reduction: TiCl₄ vapour injected into flowing molten sodium)",
+        "outputs": [
+          "Titanium powder direct (feedstock for additive manufacturing)"
+        ],
+        "byproducts": [
+          "Sodium chloride (NaCl)"
+        ],
+        "byproductFate": "NaCl separated from powder and recycled into the sodium/chlor supply.",
+        "precedent": "International Titanium Powder (ITP) / Cristal Metals, Armstrong route",
+        "register": "MODELLED",
+        "caveat": "Piloted at pre-commercial scale but never sustained commercially; document presents it optimistically as a clean direct-to-powder route. Corrected in place: the Armstrong route injects TiCl₄ vapour into a flowing stream of liquid sodium; it is not a 'plasma' reduction, so the plasma descriptor was inaccurate.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Titanium dioxide (TiO₂) pellets in molten calcium chloride electrolyte",
+        "process": "FFC Cambridge electro-deoxidation (electric current reduces TiO₂ directly to Ti metal)",
+        "outputs": [
+          "Titanium metal (no chlorination step, potentially lower energy)"
+        ],
+        "byproducts": [
+          "Anode gases (O₂/CO)"
+        ],
+        "byproductFate": "Not specified by the document.",
+        "precedent": "FFC Cambridge process, University of Cambridge (piloted by Metalysis)",
+        "register": "SPECULATIVE",
+        "caveat": "Real chemistry, piloted, but unproven at commercial scale; document itself lists purity control and scale-up as the open challenges.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Titanium tetrachloride / titanium oxide in molten salts; or calcium/hydrogen reductants",
+        "process": "Alternative reductions under research: molten-salt TiCl₄ electrolysis, calcium metallothermic reduction, hydrogen-assisted reduction",
+        "outputs": [
+          "Titanium metal or powder at lower temperature / simplified chain"
+        ],
+        "byproducts": [
+          "Spent salts, reduced-agent oxides"
+        ],
+        "byproductFate": "Not specified by the document.",
+        "precedent": "Metallothermic and hydrogen-reduction research programmes cited generically",
+        "register": "SPECULATIVE",
+        "caveat": "Document groups these as still-developing methods; handling TiCl₄ at high temperature and commercial viability are unresolved.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Titanium sponge + inert argon/nitrogen (from atmospheric air separation)",
+        "process": "Gas or plasma atomization (melt in vacuum induction furnace, blast with high-pressure inert gas), then sieve to 15-45 µm",
+        "outputs": [
+          "Spherical titanium powder for SLM 3D printing of structural, aerospace and medical parts"
+        ],
+        "byproducts": [
+          "Off-spec powder fines"
+        ],
+        "byproductFate": "Argon recovered in a closed gas loop; off-size fines re-melted.",
+        "precedent": "Standard gas-atomised Ti powder for additive manufacturing",
+        "register": "KNOWN",
+        "caveat": "Nitrogen is not an inert melt gas for titanium (Ti reacts with N to form nitrides); argon or vacuum is used, so treat the 'argon/nitrogen' framing as argon-only for Ti atomisation.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Quartz sand (SiO₂) + biochar carbon",
+        "process": "Carbothermic reduction in electric arc furnace ~2000°C: SiO₂ + 2C → Si + 2CO",
+        "outputs": [
+          "Metallurgical-grade silicon (MG-Si)"
+        ],
+        "byproducts": [
+          "Carbon monoxide (CO) gas"
+        ],
+        "byproductFate": "CO is combusted for process heat/electricity or captured; the carbon reductant is renewable biochar from the pyrolysis hub rather than fossil coke, tying silicon-making into the biomass loop.",
+        "precedent": "Standard MG-Si smelting; charcoal/wood is already a partial reductant in commercial silicon smelting",
+        "register": "MODELLED",
+        "caveat": "Commercial carbothermic silicon already blends charcoal and wood chips with coke, so renewable carbon is not novel; full biochar substitution as written is chemically plausible but not demonstrated at furnace scale (reductant reactivity, ash and fines matter).",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Metallurgical-grade silicon + hydrogen chloride + hydrogen",
+        "process": "Siemens process via trichlorosilane CVD (MG-Si → SiHCl₃, distil, then SiHCl₃ + H₂ → Si + 3HCl)",
+        "outputs": [
+          "Electronic-grade polysilicon"
+        ],
+        "byproducts": [
+          "Hydrogen chloride (HCl)"
+        ],
+        "byproductFate": "HCl is recycled to convert more MG-Si to trichlorosilane, forming the closed chlorosilane loop characteristic of the Siemens route.",
+        "precedent": "Siemens polysilicon process",
+        "register": "KNOWN",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Electronic-grade polysilicon",
+        "process": "Czochralski single-crystal growth, then diamond-wire wafer slicing (180-200 µm)",
+        "outputs": [
+          "Single-crystal silicon wafers"
+        ],
+        "byproducts": [
+          "Silicon kerf loss"
+        ],
+        "byproductFate": "Kerf silicon can be re-melted into the ingot feed.",
+        "precedent": "Czochralski wafer manufacturing",
+        "register": "KNOWN",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Silicon wafer + boron (p-type) + phosphorus (n-type) + TiO₂ anti-reflective coating (from rutile) + silver/aluminium contacts",
+        "process": "Doping, TiO₂-nanoparticle anti-reflective coating, screen-printed metal contacts, glass/bio-polymer encapsulation",
+        "outputs": [
+          "Silicon photovoltaic solar cells and modules (target 10 MW)"
+        ],
+        "byproducts": [
+          "Trim/edge scrap"
+        ],
+        "byproductFate": "TiO₂ coating draws on the same rutile stream feeding the pigment and titanium lines; glass encapsulant is the local float-glass output.",
+        "precedent": "Conventional crystalline-silicon PV cell fabrication",
+        "register": "KNOWN",
+        "caveat": "Cell fab is real, but the sourcing claims are shaky: boron/phosphorus 'from seawater' is very dilute and silver 'from monazite' is wrong (monazite carries REEs and thorium, not silver). Also, TiO₂ anti-reflective coating is largely superseded in modern crystalline-silicon cells by silicon nitride (SiNx), which also passivates the surface; TiO₂ ARC is real but dated.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "High-purity silica + soda ash (Na₂CO₃) + lime (CaO) + molten tin bath",
+        "process": "Soda-lime float glass (batch melt ~1500°C, float on molten tin, anneal in lehr)",
+        "outputs": [
+          "Flat glass panels, solar-module cover glass, windows and facades"
+        ],
+        "byproducts": [
+          "CO₂ from calcining the lime",
+          "cullet/offcuts"
+        ],
+        "byproductFate": "CO₂ goes to capture/algae; cullet is recycled back into the batch; the molten-tin bath is retained and reused.",
+        "precedent": "Pilkington float-glass process; soda-lime glassmaking",
+        "register": "MODELLED",
+        "caveat": "The float-glass process itself is fully industrial; the entry is held at MODELLED only because the upstream sourcing is optimistic. Direct seawater evaporation yields NaCl, not soda ash (Na₂CO₃); real soda ash needs the Solvay process or trona, so making soda ash locally from seawater as implied is the weak link.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Ultra-pure silica + germanium/phosphorus dopants",
+        "process": "Modified chemical vapour deposition (MCVD) preform + fibre drawing at ~2000°C with bio-acrylate coating",
+        "outputs": [
+          "Optical glass fibre for high-speed communications"
+        ],
+        "byproducts": [
+          "Dopant exhaust gases"
+        ],
+        "byproductFate": "Not specified by the document.",
+        "precedent": "MCVD optical-fibre manufacturing",
+        "register": "KNOWN",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "High-purity silica",
+        "process": "Silica aerogel production (porous low-density silica via sol-gel + supercritical drying)",
+        "outputs": [
+          "Aerogel building insulation"
+        ],
+        "byproducts": [
+          "Solvent from supercritical drying"
+        ],
+        "byproductFate": "Not specified by the document.",
+        "precedent": "Commercial silica aerogel insulation exists (e.g. Aspen Aerogels, Cabot)",
+        "register": "SPECULATIVE",
+        "caveat": "Real, commercially sold material, but supercritical-drying cost and solvent handling mean it is not yet cheap or scaled for general island construction; document treats it as routine. Register is conservative here rather than overclaimed.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Zircon sand (ZrSiO₄) + caustic soda (NaOH) + lime (CaO) + yttria (Y₂O₃ from monazite)",
+        "process": "Caustic fusion decomposition, water leach, zirconium-hydroxide precipitation, calcination to ZrO₂, yttria stabilisation, press and sinter >1500°C",
+        "outputs": [
+          "Yttria-stabilised zirconia ceramics (cutting tools, valves, bearings, SOFC electrolytes, dental/medical parts, thermal barriers)"
+        ],
+        "byproducts": [
+          "Soluble sodium silicate leachate"
+        ],
+        "byproductFate": "The leached sodium silicate is exactly the 'water glass' alkaline activator the geopolymer-concrete line requires, so the zircon plant's silicate leachate feeds the construction binder.",
+        "precedent": "Caustic-fusion zircon processing to zirconia",
+        "register": "KNOWN",
+        "caveat": "Document lists water glass separately as a seawater-plus-quartz product and does not explicitly route the zircon-leach silicate into it; the loop is a strong but inferred integration. Two chemistry caveats: yttrium is predominantly a xenotime / heavy-REE and ion-adsorption-clay product, not monazite (which is light-REE dominant), so 'yttria from monazite' is a weak sourcing claim; and the zirconium-recovery step is described loosely (after fusion the cake is acid-dissolved then hydrolytically or ammonia-precipitated, not simply 'CaO-precipitated'). The core zircon → zirconia → YSZ route itself is sound.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Monazite ((Ce,La,Nd,Th)PO₄) sand",
+        "process": "Acid digestion, then solvent extraction / ion-exchange chromatography",
+        "outputs": [
+          "Separated rare-earth elements (Nd, Pr, Dy, Ce, La, Y) for magnets, catalysts, phosphors, optics, scintillators"
+        ],
+        "byproducts": [
+          "Thorium (radioactive)",
+          "phosphate",
+          "acidic raffinate"
+        ],
+        "byproductFate": "Thorium is set aside as fuel for thorium nuclear reactors and deep-space nuclear propulsion (document proposes both); phosphate is a candidate agricultural nutrient stream.",
+        "precedent": "Real monazite REE processing; Geoscience Australia / USGS references cited",
+        "register": "KNOWN",
+        "caveat": "REE separation is established (solvent extraction is the industrial workhorse; ion-exchange is used mainly for final high-purity polishing at low throughput). The thorium-reactor fate is unbuilt at scale and radioactivity demands strict handling per the document's own safety notes; monazite is also light-REE dominant, so heavy REEs such as Dy and Y come only in small proportion.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Separated neodymium + iron (from ilmenite) + boron",
+        "process": "Alloying to NdFeB, powder metallurgy press and sinter, corrosion coating",
+        "outputs": [
+          "High-strength permanent magnets for motors, generators, wind turbines, hard drives"
+        ],
+        "byproducts": [
+          "Grinding swarf"
+        ],
+        "byproductFate": "Iron for the alloy is drawn from the ilmenite iron byproduct, giving that deironing waste a second destination.",
+        "precedent": "Sintered NdFeB magnet manufacturing",
+        "register": "KNOWN",
+        "caveat": "High-coercivity grades for traction motors and turbines usually need dysprosium or terbium additions; plain NdFeB (Nd₂Fe₁₄B) covers many uses but not the highest-temperature ones.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Seawater",
+        "process": "Solar-powered desalination (evaporation/RO)",
+        "outputs": [
+          "Freshwater for agriculture, industry and habitation"
+        ],
+        "byproducts": [
+          "Concentrated brine"
+        ],
+        "byproductFate": "Brine is not discharged but concentrated further as the feed for salt crystallisation and sodium electrolysis, and as the source liquor for lithium/boron adsorption.",
+        "precedent": "Sundrop Farms (South Australia) solar-desalination greenhouses, explicitly cited",
+        "register": "KNOWN",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Concentrated seawater brine / crystallised NaCl",
+        "process": "Molten-salt (Downs-type) electrolysis for sodium; separate aqueous chlor-alkali electrolysis for caustic soda",
+        "outputs": [
+          "Metallic sodium (battery anode, Ti reduction)",
+          "sodium hydroxide",
+          "chlorine gas"
+        ],
+        "byproducts": [
+          "Chlorine gas"
+        ],
+        "byproductFate": "Chlorine feeds the chloride/Kroll chlorination steps and the caustic co-product serves as the geopolymer alkaline activator, so both electrolysis outputs are consumed elsewhere.",
+        "precedent": "Downs cell (sodium) and chlor-alkali (caustic soda) electrolysis",
+        "register": "MODELLED",
+        "caveat": "Downgraded from KNOWN because the entry conflates two distinct, incompatible cells. A Downs cell electrolyses anhydrous molten NaCl to sodium metal plus chlorine and yields no NaOH; sodium hydroxide comes only from aqueous chlor-alkali electrolysis, which gives NaOH, Cl₂ and H₂ but no sodium metal. One process cannot deliver both metallic sodium and NaOH as originally written, so the plant needs two separate electrolysis lines. Also, molten-salt reduction needs crystallised NaCl first, so 'electrolysis of seawater' oversimplifies the path. Both cells are individually industrial; only the merged single-process claim was chemically inconsistent.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Concentrated seawater",
+        "process": "Selective adsorption / lithium-selective membranes",
+        "outputs": [
+          "Lithium concentrate for Li-ion battery cathodes"
+        ],
+        "byproducts": [
+          "Depleted brine"
+        ],
+        "byproductFate": "Depleted brine returns to the salt/sodium stream.",
+        "precedent": "Direct-lithium-extraction research from brines/seawater",
+        "register": "SPECULATIVE",
+        "caveat": "Seawater lithium is extremely dilute (~0.17 ppm); extraction is a live research area, not commercial at island scale. Even continental-brine DLE is only just emerging commercially.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Sodium (from seawater) + sulfur + beta-alumina solid electrolyte (alumina + sodium oxide)",
+        "process": "Sodium-sulfur (NaS) battery cell assembly with titanium-alloy casings",
+        "outputs": [
+          "Grid-scale sodium-sulfur energy-storage batteries"
+        ],
+        "byproducts": [
+          "Spent electrolyte at end of life"
+        ],
+        "byproductFate": "The sulfur is recovered from biomass-combustion flue gas by scrubbers, so a desulfurisation waste stream becomes the battery cathode feed.",
+        "precedent": "Commercial NaS grid batteries (e.g. NGK) exist",
+        "register": "MODELLED",
+        "caveat": "The NaS battery itself is commercially deployed (NGK), so the cell chemistry is well proven; the entry is held at MODELLED for the local-integration claims. The 'sulfur from ilmenite' claim is not real (ilmenite is an oxide with no sulfur); only the biomass-scrubber sulfur route is credible, and NaS cells also run hot (~300°C) which the document does not flag.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Aluminosilicate powders (kaolinite/feldspar from mineral sands) + alkaline activators (NaOH + sodium silicate from seawater and quartz)",
+        "process": "Geopolymerisation (mix, cast or 3D print, ambient/steam cure), optional basalt/bio-fibre reinforcement",
+        "outputs": [
+          "Geopolymer concrete for foundations, walls, marine reef modules and wave-energy structures"
+        ],
+        "byproducts": [
+          "Minimal; far lower process CO₂ than Portland cement"
+        ],
+        "byproductFate": "Its activator demand is met by the sodium-silicate leachate from zircon processing and the caustic from chlor-alkali, so upstream 'wastes' become the binder chemistry; calcium-carbonate additive versions double as marine-reef substrate.",
+        "precedent": "Fly-ash/metakaolin geopolymer concrete is an established low-carbon cement",
+        "register": "KNOWN",
+        "caveat": "Metakaolin (calcined kaolinite) is the reactive precursor; raw feldspar is comparatively unreactive, so 'feldspar' as a geopolymer feed is optimistic without calcination/activation.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Plant biomass (agricultural residues, fast-growing crops)",
+        "process": "Pyrolysis ~500°C in the absence of oxygen",
+        "outputs": [
+          "Biochar",
+          "syngas",
+          "bio-oil"
+        ],
+        "byproducts": [
+          "None treated as waste: all three fractions are used"
+        ],
+        "byproductFate": "This is the central nothing-wasted hub. Biochar becomes: the carbon reductant for silicon carbothermic reduction, high-purity graphite for Li-ion anodes, carbon black pigment, activated-carbon filtration media, carbon-fibre precursor, and soil amendment/carbon sequestration. Syngas is burned for heat and power. Bio-oil is refined to fuels and chemical precursors.",
+        "precedent": "Biomass pyrolysis / biochar is an established process",
+        "register": "KNOWN",
+        "caveat": "The individual downstream uses vary in maturity (soil amendment and syngas power are routine; biochar-to-battery-graphite, biochar-to-carbon-fibre and biochar as engineered carbon black are emerging or unproven).",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Biochar",
+        "process": "Purification and high-temperature graphitisation toward graphitic carbon",
+        "outputs": [
+          "Graphite anode material for lithium-ion batteries"
+        ],
+        "byproducts": [
+          "Purification residues"
+        ],
+        "byproductFate": "Residual carbon returns to soil-amendment or filtration use.",
+        "precedent": "Biocarbon-to-battery-anode research",
+        "register": "SPECULATIVE",
+        "caveat": "Downgraded from MODELLED: biomass char is predominantly a non-graphitising 'hard' carbon, so it resists conversion to battery-grade graphite even at high graphitisation temperatures. Biomass-derived hard carbon is a credible sodium-ion anode material, but 'high-purity graphitic carbon' for lithium-ion from biochar is not demonstrated and faces a genuine materials obstacle; commercial Li-ion anodes use synthetic or flake graphite.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Plant oils (linseed/flax) + cellulose fibres",
+        "process": "Polymerisation of plant oils into bio-resins; composite fabrication (VARTM) with plant fibres",
+        "outputs": [
+          "Bio-based polymers, epoxy resins, composite panels, pipes, filaments, turbine-blade skins, packaging, natural-rubber gaskets"
+        ],
+        "byproducts": [
+          "Press-cake/organic residue"
+        ],
+        "byproductFate": "Organic residue is composted or fed to the pyrolysis hub.",
+        "precedent": "Bioplastics and natural-fibre composites are commercial",
+        "register": "KNOWN",
+        "caveat": "Core chemistry is real (epoxidised plant oils, bio-based resins and natural-fibre composites are commercial), but some listed outputs overreach: structural wind-turbine-blade skins exceed the stiffness and fatigue performance current bio-resins/natural-fibre laminates deliver, and natural rubber is tapped as Hevea latex, not made by polymerising plant oils.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Captured CO₂ (from carbothermic reduction, lime calcination, biomass combustion) + wastewater nutrients + seawater + sunlight",
+        "process": "Algae photobioreactor cultivation",
+        "outputs": [
+          "Biofuels",
+          "nutritional supplements",
+          "oxygen / air purification"
+        ],
+        "byproducts": [
+          "Spent algal biomass"
+        ],
+        "byproductFate": "The reactor's inputs are themselves other processes' outputs: it consumes captured CO₂ and treats wastewater, closing carbon and water loops; spent biomass returns to pyrolysis or compost.",
+        "precedent": "Algal biofuel and wastewater-treatment demonstrations",
+        "register": "MODELLED",
+        "caveat": "Algal biofuel economics remain unproven at scale; document treats CO₂ 'capture and utilise' generically without specifying capture technology.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Shells / limestone (CaCO₃)",
+        "process": "Calcination (thermal decomposition to CaO): CaCO₃ → CaO + CO₂",
+        "outputs": [
+          "Lime (CaO) for glass batch, zirconium-hydroxide precipitation, geopolymer, and marine carbonate reef additive"
+        ],
+        "byproducts": [
+          "CO₂"
+        ],
+        "byproductFate": "The calcination CO₂ feeds the capture-and-algae loop; the lime itself is a shared reagent across glass, zirconia and cement lines.",
+        "precedent": "Lime kilning is a standard industrial process",
+        "register": "KNOWN",
+        "caveat": "Document hedges the feedstock as shells 'or limestone deposits, if available'; island limestone availability is uncertain.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Iron oxides (Ti-extraction byproduct) + TiO₂ (rutile) + carbon black (biochar) + plant-oil binder",
+        "process": "Pigment grinding and paint compounding",
+        "outputs": [
+          "Paints, coatings and art pigments (red/yellow iron oxides, TiO₂ white, carbon black)"
+        ],
+        "byproducts": [
+          "Grinding residue"
+        ],
+        "byproductFate": "This line IS the terminal fate of the titanium plant's iron-oxide byproduct and of biochar carbon, converting two 'wastes' into finished pigment.",
+        "precedent": "Iron-oxide and TiO₂ pigment manufacture",
+        "register": "KNOWN",
+        "caveat": "Iron-oxide and TiO₂ pigment manufacture is real, but 'carbon black' is a specific engineered material made by controlled partial combustion / thermal decomposition of a hydrocarbon feedstock. Finely milled biochar can serve as a black pigment but is not equivalent to true carbon black in particle size, tint strength or consistency.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Waste aluminium cans and scrap (post-consumer)",
+        "process": "Collection, sorting and remelting",
+        "outputs": [
+          "Recycled aluminium for solar-panel frames, wiring, cookware, utensils and structural parts"
+        ],
+        "byproducts": [
+          "Dross/skim"
+        ],
+        "byproductFate": "Recycled aluminium substitutes for bauxite smelting (saving up to 95% of the energy), and the metal is infinitely recyclable so it cycles indefinitely; dross reprocessed.",
+        "precedent": "Aluminium can recycling (real, ~95% energy saving cited)",
+        "register": "KNOWN",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Waste glass bottles (post-consumer)",
+        "process": "Crushing to cullet and remelting",
+        "outputs": [
+          "New bottles/jars, fiberglass, construction aggregate"
+        ],
+        "byproducts": [
+          "Contaminant reject"
+        ],
+        "byproductFate": "Cullet re-enters the float-glass batch, lowering silica and energy demand.",
+        "precedent": "Container-glass recycling",
+        "register": "KNOWN",
+        "caveat": "Document notes low market value (AUD 0.02-0.05/kg); driver is landfill/energy saving, not revenue. Container cullet also differs in composition from float-glass batch, so cross-use into solar cover glass needs colour/contaminant control.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Waste plastics (recycling codes 1 and 2)",
+        "process": "Mechanical recycling / reprocessing",
+        "outputs": [
+          "Building materials, clothing fibres, 3D-printing filament"
+        ],
+        "byproducts": [
+          "Non-recyclable polymer reject"
+        ],
+        "byproductFate": "Reprocessed polymer feeds the additive-manufacturing filament stream.",
+        "precedent": "PET/HDPE mechanical recycling",
+        "register": "KNOWN",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "E-waste (old electronics, post-consumer)",
+        "process": "Urban mining: dismantling, leaching and metal recovery (acid leaching to strip contaminants)",
+        "outputs": [
+          "Recovered copper, gold and rare-earth elements"
+        ],
+        "byproducts": [
+          "Leach residue, plastics"
+        ],
+        "byproductFate": "Recovered Cu/Au/REEs re-enter the electronics, wiring and magnet lines, so end-of-life devices become feedstock for new ones.",
+        "precedent": "E-waste recycling / urban mining is established",
+        "register": "KNOWN",
+        "caveat": "Household e-waste flows are small (document estimates ~5 kg/household/year) and mixed-metal recovery is chemically involved; REE recovery from e-waste specifically is far less mature than Cu/Au recovery.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Organic/food waste and agricultural residue",
+        "process": "Composting and anaerobic bio-digestion",
+        "outputs": [
+          "Compost soil amendment",
+          "biogas heat and electricity"
+        ],
+        "byproducts": [
+          "Digestate"
+        ],
+        "byproductFate": "Compost returns nutrients to greenhouse/outdoor soils; digestate is a fertiliser; biogas powers facilities, closing the food-energy-soil loop. Biochar is made separately in the pyrolysis hub, not by composting.",
+        "precedent": "Anaerobic digesters and composting (Sundrop-style closed-loop agriculture cited)",
+        "register": "KNOWN",
+        "caveat": "Minor conflation in the original: composting and digestion yield compost and digestate, not biochar; biochar comes from the pyrolysis line.",
+        "sourceDoc": "compendium"
+      },
+      {
+        "input": "Methane (potentially from biogas) + hydrogen gas",
+        "process": "Chemical vapour deposition (CVD) of diamond films",
+        "outputs": [
+          "Diamond semiconductor films for high-power devices and radiation detectors"
+        ],
+        "byproducts": [
+          "Unreacted gas"
+        ],
+        "byproductFate": "Not specified by the document.",
+        "precedent": "CVD diamond growth is real lab/industrial practice",
+        "register": "SPECULATIVE",
+        "caveat": "Doping diamond effectively (n-type especially, typically via phosphorus) remains difficult; document acknowledges this as a challenge, so diamond semiconductors stay largely at research stage.",
+        "sourceDoc": "compendium"
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Mine"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Verify"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 3,
+      "title": "Synthesize"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "mine:amity",
+      "phaseIndex": 1,
+      "phaseTitle": "Mine",
+      "agentId": "a2edb66e25a2e4d62",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203480324,
+      "queuedAt": 1784203478441,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are mining a source document for a \"full-spectrum alchemy\" material map. The principle: on a sand island, every excavated grain and every industrial byproduct becomes an input to another process, so the category \"waste\" is abolished (this is meant to go beyond circular economics toward using every element present in the sand).\n\nRead this file: C:/Users/sbt41/OneDrive/Documents/Sorting_Files/02…",
+      "lastProgressAt": 1784203857356,
+      "tokens": 71732,
+      "toolCalls": 3,
+      "durationMs": 377030,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Water-saturated dune sand aquifer\",\"process\":\"Bentonite slurry-shield TBM (\\\"Sandworm\\\"), cutter head in a pressurised chamber whose slurry pressure matches the hydrostatic head\",\"outputs\":[\"Excavated tunnel volume\",\"Slurry-borne excavated sand delivered to the refinery\"],\"byproducts\":[\"Bentonite slurry\"],\"byproductFate\":\"Slurry is recirculated as the transport medium…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "mine:masterplan",
+      "phaseIndex": 1,
+      "phaseTitle": "Mine",
+      "agentId": "a78dcc4ce38c27306",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203480349,
+      "queuedAt": 1784203478442,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are mining a source document for a \"full-spectrum alchemy\" material map. The principle: on a sand island, every excavated grain and every industrial byproduct becomes an input to another process, so the category \"waste\" is abolished (this is meant to go beyond circular economics toward using every element present in the sand).\n\nRead this file: C:/Users/sbt41/OneDrive/Documents/Sorting_Files/02…",
+      "lastProgressAt": 1784203802543,
+      "tokens": 73121,
+      "toolCalls": 3,
+      "durationMs": 322194,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Quartz sand (SiO2), the bulk fraction of the island's heavy-mineral sands\",\"process\":\"Melting/sintering and purification into glass and structural ceramics, plus reduction to metallurgical/solar-grade silicon for photovoltaic wafers; also used directly as thermal-battery storage mass\",\"outputs\":[\"structural ceramics\",\"glass\",\"solar/PV wafers\",\"thermal-battery storage …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "mine:genesis",
+      "phaseIndex": 1,
+      "phaseTitle": "Mine",
+      "agentId": "addb8520eb8b66588",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203480340,
+      "queuedAt": 1784203478442,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are mining a source document for a \"full-spectrum alchemy\" material map. The principle: on a sand island, every excavated grain and every industrial byproduct becomes an input to another process, so the category \"waste\" is abolished (this is meant to go beyond circular economics toward using every element present in the sand).\n\nRead this file: C:/Users/sbt41/OneDrive/Documents/Sorting_Files/02…",
+      "lastProgressAt": 1784203694550,
+      "tokens": 52531,
+      "toolCalls": 2,
+      "durationMs": 214210,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Heavy mineral sand: Rutile (TiO2) and Ilmenite (FeTiO3) from Minjerribah dunes\",\"process\":\"AI alloy design via the Materials Project API + GNoME; simulate 'sovereign alloys' that tolerate the ore's native impurity profile instead of purifying to 99.99%\",\"outputs\":[\"Titanium alloys for marine infrastructure and autonomous fleets (the 'Silica Citadel')\"],\"byproducts\":[\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "mine:education",
+      "phaseIndex": 1,
+      "phaseTitle": "Mine",
+      "agentId": "ae65ce0864bfda747",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203480560,
+      "queuedAt": 1784203478442,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are mining a source document for a \"full-spectrum alchemy\" material map. The principle: on a sand island, every excavated grain and every industrial byproduct becomes an input to another process, so the category \"waste\" is abolished (this is meant to go beyond circular economics toward using every element present in the sand).\n\nRead this file: C:/Users/sbt41/OneDrive/Documents/Sorting_Files/02…",
+      "lastProgressAt": 1784203742111,
+      "tokens": 65484,
+      "toolCalls": 3,
+      "durationMs": 261550,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Heavy mineral dune sand ('Silica Stack') from the island's Pleistocene dunes\",\"process\":\"Density / specific-gravity separation and hand-lens mineralogical sorting ('The Sand Sorters')\",\"outputs\":[\"Quartz (SiO2)\",\"Rutile (TiO2)\",\"Zircon (ZrSiO4)\",\"Ilmenite (FeTiO3)\"],\"byproducts\":[\"Monazite (rare-earth / thorium-bearing radioactive fraction)\",\"Ilmenite (FeTiO3) surplus…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "mine:compendium",
+      "phaseIndex": 1,
+      "phaseTitle": "Mine",
+      "agentId": "a63fef0df1d8c19cb",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203696899,
+      "queuedAt": 1784203478442,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are mining a source document for a \"full-spectrum alchemy\" material map. The principle: on a sand island, every excavated grain and every industrial byproduct becomes an input to another process, so the category \"waste\" is abolished (this is meant to go beyond circular economics toward using every element present in the sand).\n\nRead this file: C:/Users/sbt41/OneDrive/Documents/Sorting_Files/02…",
+      "lastProgressAt": 1784204036897,
+      "tokens": 81378,
+      "toolCalls": 16,
+      "durationMs": 339997,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Ilmenite (FeTiO₃) heavy-mineral sand concentrate (gravity + magnetic separation)\",\"process\":\"Sulfate process (digestion in sulfuric acid)\",\"outputs\":[\"Titanium dioxide (TiO₂) pigment\"],\"byproducts\":[\"Iron(II) sulfate / copperas\",\"iron oxides\"],\"byproductFate\":\"The iron oxides feed the paint line as red and yellow iron-oxide artist's pigments (document lists iron-oxide…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "mine:sswf",
+      "phaseIndex": 1,
+      "phaseTitle": "Mine",
+      "agentId": "a709c604c49f9f708",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203744676,
+      "queuedAt": 1784203478442,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are mining a source document for a \"full-spectrum alchemy\" material map. The principle: on a sand island, every excavated grain and every industrial byproduct becomes an input to another process, so the category \"waste\" is abolished (this is meant to go beyond circular economics toward using every element present in the sand).\n\nRead this file: C:/Users/sbt41/OneDrive/Documents/Sorting_Files/02…",
+      "lastProgressAt": 1784204072304,
+      "tokens": 91399,
+      "toolCalls": 5,
+      "durationMs": 327628,
+      "resultPreview": "{\"transformations\":[{\"input\":\"High-purity quartz silica sand (Vance-grade)\",\"process\":\"Glass manufacturing (melting/vitrification of silica)\",\"outputs\":[\"Container/flat glass\",\"Glass feedstock for silica bricks\"],\"byproductFate\":\"Glass output loops back as raw silica input to the sintered-brick stream and as concrete/asphalt aggregate\",\"precedent\":\"Vance mine historically supplied very high-purity…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "verify:genesis",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "ae5cd68e4458ee1a3",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203808267,
+      "queuedAt": 1784203694562,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are an adversarial reviewer with a chemistry and materials-engineering background. Below are material transformations extracted from the \"genesis\" source document. Check each one hard: is the chemistry/process real and correctly named? Is any stated precedent real? Is the register label honest or overclaimed? DOWNGRADE the register when the real status is weaker than claimed (lab-only, unecono…",
+      "lastProgressAt": 1784203985611,
+      "tokens": 48987,
+      "toolCalls": 2,
+      "durationMs": 177344,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Heavy mineral sand: Rutile (TiO2) and Ilmenite (FeTiO3) from Minjerribah dunes\",\"process\":\"AI alloy design informed by the Materials Project API + GNoME crystal-stability data; simulate 'sovereign alloys' that tolerate the ore's native impurity profile instead of purifying to 99.99%\",\"outputs\":[\"Titanium alloys for marine infrastructure and autonomous fleets (the 'Sil…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "verify:education",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "afd1f0d7dead11bfb",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203859900,
+      "queuedAt": 1784203742127,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are an adversarial reviewer with a chemistry and materials-engineering background. Below are material transformations extracted from the \"education\" source document. Check each one hard: is the chemistry/process real and correctly named? Is any stated precedent real? Is the register label honest or overclaimed? DOWNGRADE the register when the real status is weaker than claimed (lab-only, uneco…",
+      "lastProgressAt": 1784204104456,
+      "tokens": 40520,
+      "toolCalls": 2,
+      "durationMs": 244556,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Heavy mineral dune sand ('Silica Stack') from the island's Pleistocene dunes\",\"process\":\"Gravity (spiral/density) separation to split light quartz from the heavy-mineral concentrate, followed by magnetic and electrostatic separation to split the heavies; document names only density / specific-gravity separation and hand-lens sorting ('The Sand Sorters')\",\"outputs\":[\"Q…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "verify:masterplan",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "acb642d5a163a4ef7",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784203990151,
+      "queuedAt": 1784203802554,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are an adversarial reviewer with a chemistry and materials-engineering background. Below are material transformations extracted from the \"masterplan\" source document. Check each one hard: is the chemistry/process real and correctly named? Is any stated precedent real? Is the register label honest or overclaimed? DOWNGRADE the register when the real status is weaker than claimed (lab-only, unec…",
+      "lastProgressAt": 1784204225601,
+      "tokens": 38911,
+      "toolCalls": 1,
+      "durationMs": 235449,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Quartz sand (SiO2), the bulk fraction of the island's heavy-mineral sands\",\"process\":\"Melting/sintering and purification into glass and structural ceramics, plus carbothermic reduction to metallurgical/solar-grade silicon for photovoltaic wafers; also used directly as thermal-battery storage mass\",\"outputs\":[\"structural ceramics\",\"glass\",\"solar/PV wafers\",\"thermal-bat…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "verify:amity",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "a2cb14315a506b565",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784204041626,
+      "queuedAt": 1784203857366,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are an adversarial reviewer with a chemistry and materials-engineering background. Below are material transformations extracted from the \"amity\" source document. Check each one hard: is the chemistry/process real and correctly named? Is any stated precedent real? Is the register label honest or overclaimed? DOWNGRADE the register when the real status is weaker than claimed (lab-only, uneconomi…",
+      "lastProgressAt": 1784204420016,
+      "tokens": 348222,
+      "toolCalls": 2,
+      "durationMs": 378389,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Water-saturated dune sand aquifer\",\"process\":\"Bentonite slurry-shield TBM (\\\"Sandworm\\\"), cutter head in a pressurised chamber whose slurry pressure matches the hydrostatic head\",\"outputs\":[\"Excavated tunnel volume\",\"Slurry-borne excavated sand delivered to the refinery\"],\"byproducts\":[\"Bentonite slurry\"],\"byproductFate\":\"Slurry is recirculated as the transport medium…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 11,
+      "label": "verify:compendium",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "a89e4e387d61f08b1",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1784204074980,
+      "queuedAt": 1784204038391,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You are an adversarial reviewer with a chemistry and materials-engineering background. Below are material transformations extracted from the \"compendium\" source document. Check each one hard: is the chemistry/process real and correctly named? Is any stated precedent real? Is the register label honest or overclaimed? DOWNGRADE the register when the real status is weaker than claimed (lab-only, unec…",
+      "lastProgressAt": 1784204400087,
+      "tokens": 45573,
+      "toolCalls": 2,
+      "durationMs": 325107,
+      "resultPreview": "{\"transformations\":[{\"input\":\"Ilmenite (FeTiO₃) heavy-mineral sand concentrate (gravity + magnetic separation)\",\"process\":\"Sulfate process (digestion in sulfuric acid)\",\"outputs\":[\"Titanium dioxide (TiO₂) pigment\"],\"byproducts\":[\"Iron(II) sulfate / copperas\",\"iron oxides\"],\"byproductFate\":\"The iron oxides feed the paint line as red and yellow iron-oxide artist's pigments (document lists iron-oxide…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 12,
+      "label": "verify:sswf",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "ad86ef02adfc91773",
+      "model": "claude-opus-4-8",
+      "state": "error",
+      "startedAt": 1784204224496,
+      "queuedAt": 1784204072315,
+      "attempt": 1,
+      "promptPreview": "You are an adversarial reviewer with a chemistry and materials-engineering background. Below are material transformations extracted from the \"sswf\" source document. Check each one hard: is the chemistry/process real and correctly named? Is any stated precedent real? Is the register label honest or overclaimed? DOWNGRADE the register when the real status is weaker than claimed (lab-only, uneconomic…",
+      "lastProgressAt": 1784204225458,
+      "error": "You've hit your session limit · resets 1:20am (Australia/Brisbane)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 962
+    },
+    {
+      "type": "workflow_agent",
+      "index": 13,
+      "label": "synthesise-tree",
+      "phaseIndex": 3,
+      "phaseTitle": "Synthesize",
+      "agentId": "a778d565f329eb3a7",
+      "model": "claude-opus-4-8",
+      "state": "error",
+      "startedAt": 1784204540087,
+      "queuedAt": 1784204480035,
+      "attempt": 1,
+      "promptPreview": "Here are verified material transformations for a sand-island \"full-spectrum alchemy\" system, where the design goal is that every byproduct becomes an input and nothing is spoil. Synthesize them into one coherent, de-duplicated tree.\n\nGroup by feedstock/source: quartz/silica, zircon, rutile+ilmenite, monazite, seawater, anthropogenic waste (landfill), biological streams, heat+CO2 (merge or add grou…",
+      "lastProgressAt": 1784204540705,
+      "error": "You've hit your session limit · resets 1:20am (Australia/Brisbane)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 618
+    }
+  ],
+  "totalTokens": 957858,
+  "totalToolCalls": 41
+}
