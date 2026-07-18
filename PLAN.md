@@ -177,7 +177,7 @@ Every wave ends with the standard checks: all pages 200, no console errors, no e
 **Next-day handover (2026-07-18 tools-down): site is 40 pages, LIVE, git clean, all pages 200, all internal + external links resolve, no em dashes. Nothing broken. The items below are decisions/design, not fixes.**
 
 Needs Luke's steer (don't guess, per [[design-first-self-gate]]):
-- [ ] SITEMAP INFORMATION ARCHITECTURE: needs a holistic re-design, not more appending. Today only did the safe dedup (removed the duplicate "Dig a tunnel" from Rung 03). Known weirdness to resolve WITH his grouping preference: corridor ("The line on the ground") sits under the Tunnels rung though it's a places-map; "What the sand builds" is a cross-cutting bucket of 8; the minerals sit under Rung 02. One 30-second steer from Luke, then design the whole map once and hold it.
+- [x] SITEMAP rebuilt 2026-07-18 into one coherent structure: three bands (the ladder rungs 00-07 in unbroken order; cross-cutting themes alchemy + what-the-sand-builds; Finding your way = home, corridor, method, country, walls, sitemap). corridor moved out of the Tunnels rung to Finding-your-way; Home added; every one of 40 pages listed exactly once. Luke can still ask for a different grouping, but it is clean and coherent now, not appended.
 - [ ] CORRIDOR: decide if the Ready S.E.T. Co-op (9 Ballow Road, office/cafe, trust/co-op) gets its own distinct stop, kept separate from the Ballow Road Sand & Screen Hub (12 Ballow Road, make + screen) which is now Stop Two. Three distinct things: Sand & Screen Hub (12), Co-op (9), Maker-Space Lab (own repo, folds into bench). Do NOT re-merge them.
 - [ ] Confirm or rename "grain-by-grain".
 - [ ] Rule on the candidate assimilation repos in §4.
