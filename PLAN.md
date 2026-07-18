@@ -174,13 +174,19 @@ Every wave ends with the standard checks: all pages 200, no console errors, no e
 
 ## 10. Open items
 
-- [ ] Luke to confirm or rename "grain-by-grain".
-- [ ] Luke to rule on the candidate assimilation repos in §4 (digital-twin-builders, web3-sensorium, space-weather-news, disaster-kiosks, Minjerribah-Resilience, space-station-simulator, capsule-surge-lab).
-- [ ] Island geotech at depth (drilling logs, coffee-rock stratigraphy): does the system hold these?
-- [ ] Heat-to-power docs beyond sand-battery basics: in the system?
-- [ ] Wire straddie-clean-energy-superpower into ready-set-co-op-trust-hub ecosystem links (edit in that repo).
-- [ ] sandworm licence.html generator drift (task chip spawned; fix lives in that repo).
-- [ ] GitHub repo creation + first push (Luke's keys, Luke's timing). Repo is not yet git-initialised.
+**Next-day handover (2026-07-18 tools-down): site is 40 pages, LIVE, git clean, all pages 200, all internal + external links resolve, no em dashes. Nothing broken. The items below are decisions/design, not fixes.**
+
+Needs Luke's steer (don't guess, per [[design-first-self-gate]]):
+- [ ] SITEMAP INFORMATION ARCHITECTURE: needs a holistic re-design, not more appending. Today only did the safe dedup (removed the duplicate "Dig a tunnel" from Rung 03). Known weirdness to resolve WITH his grouping preference: corridor ("The line on the ground") sits under the Tunnels rung though it's a places-map; "What the sand builds" is a cross-cutting bucket of 8; the minerals sit under Rung 02. One 30-second steer from Luke, then design the whole map once and hold it.
+- [ ] CORRIDOR: decide if the Ready S.E.T. Co-op (9 Ballow Road, office/cafe, trust/co-op) gets its own distinct stop, kept separate from the Ballow Road Sand & Screen Hub (12 Ballow Road, make + screen) which is now Stop Two. Three distinct things: Sand & Screen Hub (12), Co-op (9), Maker-Space Lab (own repo, folds into bench). Do NOT re-merge them.
+- [ ] Confirm or rename "grain-by-grain".
+- [ ] Rule on the candidate assimilation repos in §4.
+
+Lower priority / when relevant:
+- [ ] Corridor images are best-available constellation concept art, not per-stop bespoke; revisit if better imagery exists. Current: ferry=rung00, Ballow hub=community-wealth, Amity=care-community, sports=waves-marine, mine=subterranean-city.
+- [ ] Reef-decode: two pathways not yet built as pages (the artificial-island/platform question; the mixed-portfolio comparison). Source data in that repo's reef-calculator.js.
+- [ ] Island geotech at depth; heat-to-power docs beyond sand-battery: mine when supplied.
+- [ ] sandworm licence.html generator drift (fix lives in that repo).
 
 ## 11. Changelog
 
