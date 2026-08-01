@@ -56,10 +56,12 @@
   }
   const sweep = () => {
     if (!pending.size) { return; }
+    /* Only the top edge is tested, so anything scrolled past stays revealed:
+       an anchor jump or a restored scroll position cannot skip a block. */
     const line = window.innerHeight * 0.92;
     pending.forEach((el) => {
       const r = el.getBoundingClientRect();
-      if (r.top < line && r.bottom > 0) { show(el); pending.delete(el); }
+      if (r.top < line) { show(el); pending.delete(el); }
     });
   };
   sweep();
