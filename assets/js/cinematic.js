@@ -38,36 +38,37 @@
     { slug: 'method', file: 'method.html', label: 'How to read this site' },
   ];
 
-  /* ---------- Reveal on scroll ---------- */
-  const reveals = document.querySelectorAll('.reveal');
-  if (reveals.length && 'IntersectionObserver' in window && !reduced) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .15, rootMargin: '0px 0px -8% 0px' });
-    reveals.forEach((el) => io.observe(el));
-  } else {
-    reveals.forEach((el) => el.classList.add('is-visible'));
+  /* ---------- Reveal on scroll + kintsugi seams ----------
+     Deliberately NOT IntersectionObserver. Content visibility must never
+     depend on an observer callback arriving: browsers throttle or delay IO
+     in background tabs, prerendered pages and low-power modes, and the old
+     version also used a fractional threshold that blocks taller than the
+     viewport (threats' full card list) could never meet, leaving whole
+     sections at opacity 0 forever. A plain geometry sweep on scroll/resize
+     gives the same staggered effect with nothing that can strand content. */
+  const pending = new Set(
+    [...document.querySelectorAll('.reveal'), ...document.querySelectorAll('.kintsugi-seam')]
+  );
+  const show = (el) => el.classList.add(el.classList.contains('kintsugi-seam') ? 'is-drawn' : 'is-visible');
+  if (reduced) {
+    pending.forEach(show);
+    pending.clear();
   }
-
-  /* ---------- Kintsugi seams draw themselves in gold on approach ---------- */
-  const seams = document.querySelectorAll('.kintsugi-seam');
-  if (seams.length && 'IntersectionObserver' in window && !reduced) {
-    const seamObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) { return; }
-        entry.target.classList.add('is-drawn');
-        seamObserver.unobserve(entry.target);
-      });
-    }, { threshold: 0.6 });
-    seams.forEach((el) => seamObserver.observe(el));
-  } else {
-    seams.forEach((el) => el.classList.add('is-drawn'));
-  }
+  const sweep = () => {
+    if (!pending.size) { return; }
+    const line = window.innerHeight * 0.92;
+    pending.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < line && r.bottom > 0) { show(el); pending.delete(el); }
+    });
+  };
+  sweep();
+  window.addEventListener('scroll', sweep, { passive: true });
+  window.addEventListener('resize', sweep, { passive: true });
+  window.addEventListener('load', sweep);
+  /* Late-layout safety net (fonts/images shifting geometry after first paint). */
+  setTimeout(sweep, 400);
+  setTimeout(sweep, 1500);
 
   /* ---------- Mark the current page in the nav ---------- */
   const normalise = (value) => {
